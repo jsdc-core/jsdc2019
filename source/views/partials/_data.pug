@@ -1,0 +1,285 @@
+-
+  //- name: 講者名字, description: 作者介紹, image: 照片
+  // ## option ##
+  //- company: 公司/組織
+  //- 額外連結們: github, twitter, link, linkedin
+
+  var speakers = {
+    RyanDahl: {
+      name: 'Ryan Dahl',
+      isKeynote: true,
+      company: 'Independent',
+      description: 'I am a software engineer from NYC. I am best known for my work on the Node.js project, which I created and project managed for its first several years. I am generally interested in server software, usability of low-level tooling but also computer vision and mathematics. I talk about my background a bit more in a [2017 podcast].',
+      image: 'RyanDahl_2018.jpg',
+      agenda: {
+        title: 'Deno, A New Server-Side Runtime',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=FlTG0UXRAkE&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://drive.google.com/open?id=1JWg9r2467NbC_ugaJk5e2BMyz3OdrN9S',
+        outline_E: '',
+        outline: 'Deno is a new native code JS runtime that aims to modernize and correct some design mistakes in Node. It has a built-in module system which uses URLs to import external modules. Deno conditionally allows access to various system resources - like writing to the disk or accessing the network - allowing some code to be run in a secure sandbox. Deno is a modern take on the server-side JavaScript idea: it is built in Rust instead of C++, uses Tokio instead of libuv for an event loop, and has the TypeScript compiler built-in.'
+      },
+      links: {
+        github: 'http://github.com/ry',
+        links: 'https://mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/'
+      }
+    },
+    SamuelFurter: {
+      name: 'Samuel Furter',
+      isKeynote: false,
+      company: 'Ethereum Foundation',
+      description: 'I\'m the web3.js maintainer and a passionated web developer how started programming with nine years. In my free time I\'m participate in GameJams and other hackathons in europe and also working on harbourproject.io an opensource governance protocol on the ethereum blockchain. Coffee to code is my life style.',
+      image: 'SamuelFurter_2018.jpg',
+      agenda: {
+        title: 'Web3.js - Getting started with the development of an Dapp',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=HFwPgHovUJA&index=8&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://drive.google.com/open?id=128l4fkTh3BqYPjU5aTTeWzcTzsvje_Q1',
+        outline_E: '',
+        outline: 'Introducing Web3.js and a live coding session of an DApp.'
+      },
+      links: {
+        github: 'https://github.com/nivida'
+      }
+    },
+    TracyLee: {
+      name: 'Tracy Lee',
+      isKeynote: false,
+      company: 'This Dot, Inc',
+      description: 'Tracy is a Google Developer Expert, RxJS Core Team member, a Women Techmakers Lead, and a frequent keynote speaker at conferences. She heads up Community Relations at Node Foundation, is the host of the Modern Web podcast, organizer of This.JavaScript, Contributor Days, Google Developer Group Silicon Valley and Triangle, and RxWorkshop. She is also Co-Founder of This Dot Labs, an elite consultancy helping teams build front end applications.',
+      image: 'TracyLee_2018.jpg',
+      agenda: {
+        title: 'How Reactive Programming makes developer lives easier.',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=n7Xw7fAE6tI&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://www.slideshare.net/modernweb/reactive-programming-with-rxjs-angular-taiwan/modernweb/reactive-programming-with-rxjs-angular-taiwan',
+        outline: 'Reactive programming paradigms are all around us. So why does is it awesome? We\'ll explore reactive programming in standards, frameworks and libraries and talk about how to think reactively. Then we\'ll take a more practical approach and talk about how to utilize reactive programming patterns with an abstraction like RxJS, a domain specific language for reacting to events and how using this abstraction can make your development life much easier in Angular.',
+        outline_E: ''
+      },
+      links: {
+        twitter: 'https://twitter.com/ladyleet',
+        links: 'http://thisdot.co/labs'
+      }
+    },
+    W: {
+      name: '黃保翕 Will',
+      isKeynote: true,
+      company: '多奇數位創意有限公司',
+      description: '現任多奇數位創意有限公司技術總監，連續 10 度當選微軟最有價值專家(MVP) ，熟悉各式 Web 前後端開發技術，出版著作有 ASP.NET MVC 2 開發實戰、Windows Phone 開發實戰、ASP.NET MVC 4 開發實戰等書籍。曾獲選2013第6屆iT邦幫忙鐵人賽年度大獎。',
+      image: 'will.jpg',
+      agenda: {
+        title: '體驗 Angular 7 極速開發 (Workshop)',
+        levels: [],
+        lang: 'CH',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=w_CsRR425TQ&index=6&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://github.com/doggy8088/jsdc2018-ng7',
+        outline: '想在 90 分鐘掌握 Angular 7 最核心的開發知識嗎？想知道如何在 90 分鐘內完成 TodoMVC 應用程式開發嗎？那你應該要報名這場 Angular 開發工作坊！',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/doggy8088/',
+        twitter: 'https://twitter.com/Will_Huang'
+      }
+    },
+    WilliamChou: {
+      name: 'William Chou',
+      isKeynote: false,
+      company: 'Google',
+      description: 'William is a software engineer at Google working on Accelerated Mobile Pages (AMP). He works on building interactive and dynamic experiences in AMP and leads a team based in NYC',
+      image: 'WilliamChou_2018.jpg',
+      agenda: {
+        title: 'AMP and Multithreaded JS',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=3B3L9ZAInXk&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://drive.google.com/open?id=1_pmWGkZcIEsWyE5i_86soVzPW1RQFH-J',
+        outline: 'A recap on Accelerated Mobile Pages (AMP) from three years ago to today and how it\'s promoting multithreading in web development.',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/choumx'
+      }
+    },
+    DavidNg: {
+      name: 'David Ng',
+      isKeynote: false,
+      company: 'Likecoin',
+      description: 'David Ng是LikeCoin的全端工程師，擅長前端，熟悉React.js、Vue.js，熱愛網頁動態互動設計 及開發，現試著挑戰區塊鏈相關的技術開發。',
+      image: 'DavidNg_2018.jpg',
+      agenda: {
+        title: '初嘗去中化應用 - Web3.js入門',
+        levels: [],
+        lang: 'CH',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=V2Dc0a3dbFk&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://docs.google.com/presentation/d/1X1XqhO_9P6473vb39Y3uUXmozHd1E6fBz7HlXyLxFaY',
+        outline: '<ol><li>以太坊及智能合約簡介</li> <li>什麼是去中化應用</li> <li>去中心化應用與傳統應用比較</li> <li>Live Demo</li></ol>',
+        outline_E: ''
+      },
+      links: {
+      }
+    },
+    Ledbest: {
+      name: 'Mars Peng',
+      isKeynote: false,
+      company: 'Leadbest',
+      description: 'LEADBEST 資深技術經理, 前台灣電商 friDay 購物前端負責人致力於前端開發與跨平台整合, 擁有多年 Mobile Web / Desktop Web / SPA 等前端開發經驗 LEADBEST 為區塊鏈一級市場的一站式投資金融管理平台',
+      image: 'Ledbest_2018.jpg',
+      agenda: {
+        title: 'Dapp 跨平台相容性解決方案',
+        levels: [],
+        lang: 'CH',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=445r5wf7pdI&index=7&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://www.slideshare.net/MarsOrange/dapp-123330931',
+        outline: '傳統開發網頁需要處理不同瀏覽器相容性，在區塊鏈的世界除了瀏覽器外還需處理錢包的相容性 LEADBEST 為早期踏入 Dapp 開發團隊，從剛開始支持熱門錢包外為了讓更多使用者使用陸續踩到不同錢包的技術問題，因此設計了一套跨錢包 Dapp 瀏覽器相容性解決方案',
+        outline_E: ''
+      },
+      links: {
+      }
+    },
+    RubenTan: {
+      name: 'Ruben Tan',
+      isKeynote: false,
+      company: 'neuroware',
+      description: 'Ruben is the CTO of Neuroware (R1 DOT MY Sdn Bhd) from Malaysia, a blockchain infrastructure company currently known for being the first in Malaysia to secure a blockchain project with the Securities Commission of Malaysia. He is a technologies at heart, and his current obsession is distributed systems and peer-to-peer technology.',
+      image: 'RUBEN_2018.jpg',
+      agenda: {
+        title: 'Convertine to vue.js the right way',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=4LrKV9kYuLA&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://drive.google.com/open?id=1ZJu7b7j8jVNG5WPRbJx1UiHPMbfVCa3x',
+        outline: 'Learn how to seamlessly refactor vuejs into your existing web application and what kind of pitfalls to avoid.',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/soggie'
+      }
+    },
+    VincentChiang: {
+      name: 'Vincent Chiang',
+      isKeynote: false,
+      company: 'KKBOX',
+      description: 'Vincent is a Developer Advocate at KKBOX Inc. Engage potential partners and developers to integrate KKBOX music services. Promote KKBOX Open API by developing showcases, writing articles, and be a lecturer at conferences and meetups in many times.',
+      image: 'VincentChiang_2018.JPG',
+      agenda: {
+        title: 'From KKBOX Open API to JavaScript SDK',
+        levels: [],
+        lang: 'CH',
+        type: '',
+        youtube: 'https://www.youtube.com/watch?v=8TL73gMuTgY&list=PL8dIIwCMF-SP9LpiqVypGKHLaGNm8vQ29',
+        slide: 'https://slides.com/zaoldyeck/sdk-building-principles',
+        outline_E: '',
+        outline: 'If you already have APIs, how to package it into a SDK for release? This agenda will mainly focus on the following points:\n <ul><li>Principles of SDK architecture</li><li>JavaScript coding style</li> <li>Document writing</li> <li>Ways to promote your API and SDK to community developers</li></ul>'
+      },
+      links: {
+      }
+    },
+  };
+
+  var agendaLevel = {
+    none: '不拘',
+    beginner: '初階',
+    intermediate: '中階',
+    advanced: '高階'
+  };
+  var languages = {
+    CH: '中',
+    EN: '英'
+  };
+
+  var agenda = {
+    '11/17(六)': [
+      {time: '09:00 ~ 09:20', list: {
+        all: {name: '會眾報到', speaker: ''},
+      }},
+      {time: '09:20 ~ 09:30', list: {
+        all: {name: '大會開場', speaker: ''},
+      }},
+      {time: '09:30 ~ 10:20', list: {
+        101: {name: '', speaker: 'RyanDahl'},
+      }},
+      {time: '10:20 ~ 10:30', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '10:30 ~ 11:10', list: {
+        101: {name: '', speaker: 'TracyLee'},
+      }},
+      {time: '11:10 ~ 11:30', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '11:30 ~ 12:10', list: {
+        101: {name: '', speaker: 'DavidNg'},
+        201: {name: '', speaker: 'VincentChiang'},
+      }},
+      {time: '12:10 ~ 13:10', list: {
+        all: {name: '午餐', speaker: ''},
+      }},
+      {time: '13:10 ~ 14:00', list: {
+        101: {name: '', speaker: 'WilliamChou'},
+      }},
+      {time: '14:00 ~ 14:10', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '14:10 ~ 14:50', list: {
+        101: {name: '', speaker: 'RubenTan'},
+        201: {name: '', speaker: 'W'},
+      }},
+      {time: '14:50 ~ 15:00', list: {
+        101: {name: '休息', speaker: ''},
+        201: {name: '', speaker: 'W'},
+      }},
+      {time: '15:00 ~ 15:40', list: {
+        101: {name: '', speaker: 'Ledbest'},
+        201: {name: '', speaker: 'W'},
+      }},
+      {time: '15:40 ~ 16:00', list: {
+        all: {name: '下午茶', speaker: ''},
+      }},
+      {time: '16:00 ~ 16:40', list: {
+        101: {name: '', speaker: 'SamuelFurter'},
+      }},
+      {time: '16:40 ~ 17:00', list: {
+        all: {name: '散場', speaker: ''},
+      }},
+    ],
+  };
+
+  var sponsors = {
+    'titanium': [
+
+    ],
+    'platinum': [
+
+    ],
+    'gold': [
+      {company: '英諾瓦資訊科技服務有限公司', logo: './images/sponsors/innova.png', description: '英諾瓦資訊科技服務有限公司(Innova Solutions Taiwan, LTD.)，是美商英諾瓦為全美最大醫療支付系統公司──「Change Healthcare」(https://www.changehealthcare.com/)成立的首座海外軟體研發中心。 從2016年中開始 座落於台北內湖科技園區，鎖定台灣軟體開發人才潛力以及政府重點發展策略藍圖，以替軟體工程師量身打造最理想的工作環境為願景，全速發展。\n\n「接軌最新科技、傳遞科技價值」──總部位在美國矽谷的英諾瓦，深信軟體業的發展價值、致力於集結資訊科技之頂尖人才，讓企業跳脫既有的產品服務模式。因而吸引美國醫療支付巨擘Change Healthcare成為合作客戶，協助在台成立目標規模500人以上之企業級軟體研發中心。\n\n有別於台灣健保體系，美國醫療支付的關係界於醫院、藥房、患者、保險公司間，眾多整合醫療支付系統相關的公司應運而生，其產值高達20%美國國內生產毛額。年營業額32億美元的Change Healthcare市佔率近70%，為首家雲端化醫療支付系統公司、更是其中規模之最。每日交易筆數高達數億次，可想見其資訊流量之龐大和雲端平台需求之必要。\n\n對於軟體開發菁英的你而言，這是一個即時就能看到自己的成果上線，還能直接得到百萬人數級使用者反饋的最實際成就！\n我們有一流的軟體人才、深藏不露的軟體高手與你共事，是學習成長絕佳環境！\n每個人除了技術層面發展與成就的收穫，更能在目前趨於保守的大環境中，有最難得的階層與管理的晉升與授權的機會！\n\n隨著組織快速成長，Innova Solutions Taiwan一步一腳印塑造年輕、開放、有活力的組織文化。我們重視每一位員工，除了有良好工作環境、超棒的同事也提供學習及成長的空間，歡迎優秀又追求職涯發展的朋友，一起加入我們的工作行列！', link: "https://www.innovasolutions.com/"},
+      {company: '鈦坦科技股份有限公司', logo: './images/sponsors/titansoft.png', description: '鈦坦科技Titansoft，是一間總部位於新加坡的軟體開發公司，專注於遊戲和娛樂產業。\n因人才培養與制度創新的高度投入與創新管理，在2017年被新加坡電腦公會評選為《最值得效力科技公司》。作為適應性規劃和敏捷開發的堅定信徒，鈦坦科技的目標是快速、靈活地應對客戶和市場需求的變化。扁平組織重視透明度和開放性，使鈦坦科技的團隊能夠通過持續改善來交付高品質的商業價值。\n鈦坦科技在2014年開始導入Agile敏捷開發管理，實踐自發領導與全員參與，力求將敏捷概念完整注入公司文化與組織發展中。在多次的嚐試與挫折學習後，逐漸形塑出鈦坦科技坦率透明的核心精神。鈦坦科技積極參與產業分享與社群活動，在國內多次大型研討會中引進「敏捷診所」概念，為在企業轉型路上遭遇不同挑戰的夥伴們給予分享與建議。', link: "https://www.titansoft.com/tw"},
+      {company: '狄卡科技股份有限公司', logo: './images/sponsors/dcard.png', description: 'Dcard 團隊致力於打造一個讓每個人都能在這裡找到共鳴的平台，我們提供的社群服務，目前擁有每個月超越八百萬的不重複訪客與雙位數的月成長曲線，在學生族群有極高的滲透率以及黏著時間。未來我們希望持續為這個社會創造價值及可能性，因此希望可以有更多夥伴加入。\n\n Web Backend Developer\n\nWeb Full-stack Developer\n\n如果你與我們共同認同並期待著「讓每個人都能在 Dcard 找到共鳴」；\n\n如果你無時無刻都懷抱著渴望成長的能量；並與我們一起期待為下個世代的社群網路創造更多的不一樣，11/17 Dcard 會在 JSDC 2018\n\n現場跟大家見面，歡迎來與我們聊聊，我們期待跟你分享更多更多在 Dcard 有趣的事情 🙌', link: "https://www.dcard.tw"},
+      {company: 'Oath（原 Yahoo!奇摩）', logo: './images/sponsors/oath.png', description: 'Oath 是 Verizon 威訊通訊旗下的子公司，我們透過價值主導、致力於建立讓人們喜愛的品牌。我們在全球擁有超過10億用戶，提供包括 Yahoo 等超過50個媒體內容、科技與廣告產品品牌。作爲全球數位行動領導者，Oath正在重新定義媒體的未來。\n\n在台灣，我們持續以 Yahoo 奇摩為品牌，提供包括 Yahoo TV、新聞、電子信箱、搜尋、拍賣、超級商城、購物中心、股市、電影、運動、名人娛樂等多項服務。除服務廣大網友及廣告主，Yahoo 奇摩也為企業提供電子商務解決方案。您想更了解 Yahoo，歡迎參觀我們的企業網站 https://tw.yahoo.com/', link: "https://tw.yahoo.com/"},
+    ],
+    'silver': [
+      {company: 'KlickKlack', logo: './images/sponsors/KlickKlack_2018.png', description: 'KlickKlack Communications 提供專業的有線與無線網路服務，使人與人間的通訊落差降到最低。團隊已服務上百場活動，包含台灣地區最大的線上遊戲、網路直播、資訊社群、產品發表會、演唱會、會場展覽與電音派對等。整合網路監控、系統交叉備援、即時廣告互動，量身為客戶打造優質的網路服務體驗。', link: "https://www.kkco.com.tw"},
+    ],
+    'special': [
+      {company: 'Carousell', logo: './images/sponsors/carousell.png', description: 'Carousell 旋轉拍賣為社群拍賣平台，2012 年在新加坡上線後，已拓展至台灣、香港、印尼、馬來西亞、菲律賓、澳洲等國家。現有超過 6,500 萬件刊登商品，為全球成長最快及最大的行動拍賣平台之一，在新加坡、台灣與香港均於手機購物應用程式排名中名列前茅。', style: "height:189px;line-height:189px;", link: "https://tw.carousell.com/"},
+      {company: 'Pinkoi', logo: './images/sponsors/pinkoi.png', description: 'Pinkoi 是亞洲領先的設計商品購物網站，擁有眾多海內外優質設計師群，堅持用好品味、客製化的獨特設計，實現每個人的美感生活，也讓每個送禮時刻更加獨一無二。\n\n2011 年 8 月成立至今，致力於經營台灣、日本、泰國、中港澳、美加及其他國際市場，期望讓亞洲迷人的好設計在全世界散發光芒，並創造一個讓生活更美好的設計生態圈。', style: "height:189px;line-height:189px;", link: "https://www.pinkoi.com/"},
+    ]
+  };
+  var tranformName = {
+    'titanium': {name: '鑽石級', col: 12},
+    'platinum': {name: '鉑金級', col: 12},
+    'gold': {name: '金級', col: 6},
+    'silver': {name: '銀級', col: 4},
+    'special': {name: '特別感謝', col: 2},
+  };
