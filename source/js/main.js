@@ -5,9 +5,9 @@
       }
       var countdown = setInterval(function(){
         var specifyDay = null;
-        var nightTicketEndDay = new Date('2018/11/17 09:00:00').getTime();
-        var confStartDay = new Date('2018/11/17 09:00:00').getTime();
-        var confEndtDay = new Date('2018/11/18 17:00:00').getTime();
+        var nightTicketEndDay = new Date('2019/10/26 09:00:00').getTime();
+        var confStartDay = new Date('2019/10/26 09:00:00').getTime();
+        var confEndtDay = new Date('2019/10/26 17:00:00').getTime();
         // var countdownTitle = document.getElementsByClassName('content')[0];
         var ticketButtonText = document.getElementsByClassName('ticket-booking')[0];
 
@@ -47,15 +47,15 @@
         var minutes = Math.floor((diff / util.minutes) % 60);
         var seconds = Math.floor((diff / util.seconds) % 60);
 
-        var str = toTwo(day) + toTwo(hours) + toTwo(minutes) + toTwo(seconds);
-        $('.time-content .num').each(function(i, ele){
-          $(ele).html('<img width=100% src="images/number/'+str.charAt(i)+'.png">');
-        });
+        // var str = toTwo(day) + toTwo(hours) + toTwo(minutes) + toTwo(seconds);
+        // $('.time-content .num').each(function(i, ele){
+        //   $(ele).html('<img width=100% src="images/number/'+str.charAt(i)+'.png">');
+        // });
 
-        // $('.date').text(day.toString().length === 1?'0'+ day:day);
-        // $('.hours').text(hours.toString().length === 1?'0'+ hours:hours);
-        // $('.minutes').text(minutes.toString().length === 1?'0'+ minutes:minutes);
-        // $('.seconds').text(seconds.toString().length === 1?'0'+ seconds:seconds);
+        $('.date').text(day.toString().length === 1?'0'+ day:day);
+        $('.hours').text(hours.toString().length === 1?'0'+ hours:hours);
+        $('.minutes').text(minutes.toString().length === 1?'0'+ minutes:minutes);
+        $('.seconds').text(seconds.toString().length === 1?'0'+ seconds:seconds);
       }, 1000);
 
 })(jQuery);

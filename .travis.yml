@@ -11,7 +11,7 @@ before_install:
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name "JSDC Taiwan"
 - git config --global user.email hq@jsdc.tw
-- git clone -b gh-pages git@github.com:jsdc-core/jsdc2018.git dist
+- git clone -b gh-pages git@github.com:jsdc-core/jsdc2019.git dist
 install:
 - yarn install
 script:
