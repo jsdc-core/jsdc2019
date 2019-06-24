@@ -1,21 +1,39 @@
 extends ../partials/_layout
 
 block content
-  mixin createSponsorContent(col, data, key)
-    a.sponsor-content-area(class="col-md-"+col+" col-xs-12" style="text-decoration:none;"+(data.style?data.style:"") href=data.link title=data.company+(data.description?"\n\n"+data.description:"") target="_blank")
-      div(class=key)
-        img.company-logo(src=data.logo)
-        if col > 2
-          .company-description!= data.description.replace(/\n/g, "<br>")
+  div.level 金級
+  div.large-wrapper
+      each val, index in sponsors.gold
+          .wrapper
+            .main-box
+              .img-box
+                .overlay
+                  p.intro-text.text-center !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+                  // <br>
+                  a(href=val.link)
+                    span.visit
+                      span Visit
+                img.img-responsive(src=val.logo, alt='')
+              .text-box.text-center
+                h5.nopadding.title #{val.company}
+                p.subtext #{val.en_company}
 
-  .container-fluid#sponsors
-    each sponsorItems, sponsorIndex in sponsors
-      if sponsorItems.length > 0
-        .row
-          .col-md-12.col-xs-12
-            h2.company-name(class=sponsorIndex) #{tranformName[sponsorIndex].name || sponsorIndex.toUpperCase()}
-          each item, index in sponsorItems
-            +createSponsorContent(tranformName[sponsorIndex].col, item, sponsorIndex)
+//- block content
+//-   mixin createSponsorContent(col, data, key)
+//-     a.sponsor-content-area(class="col-md-"+col+" col-xs-12" style="text-decoration:none;"+(data.style?data.style:"") href=data.link title=data.company+(data.description?"\n\n"+data.description:"") target="_blank")
+//-       div(class=key)
+//-         img.company-logo(src=data.logo)
+//-         if col > 2
+//-           .company-description!= data.description.replace(/\n/g, "<br>")
+
+//-   .container-fluid#sponsors
+//-     each sponsorItems, sponsorIndex in sponsors
+//-       if sponsorItems.length > 0
+//-         .row
+//-           .col-md-12.col-xs-12
+//-             h2.company-name(class=sponsorIndex) #{tranformName[sponsorIndex].name || sponsorIndex.toUpperCase()}
+//-           each item, index in sponsorItems
+//-             +createSponsorContent(tranformName[sponsorIndex].col, item, sponsorIndex)
 
 block js
   script.
@@ -25,4 +43,4 @@ block js
 
 block css
   style(type='text/css').
-    body .jsdc-background { background-color: #f2f2f2; }
+    

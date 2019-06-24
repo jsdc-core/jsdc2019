@@ -15,19 +15,25 @@ $jsdc-b: #3096b2;
 }
 
 body {
-  // font-family: "微軟正黑體", 'Open Sans', sans-serif;
-  font-family: 'Varela Round', '微軟正黑體', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background: black;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 23px;
 
   .jsdc-background {
     // background-image: url('../images/official/background.png');
     // background-image: url('../images/official/jsdc-background.png');
-    background-size: 100px;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    // background-size: 100px;
+    width: 100%;
+    height: 100%;
+    // width: 100vw;
+    // height: 100vh;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: -1;
   }
 }
 
@@ -37,10 +43,10 @@ body {
   // background-color: rgba(40, 19, 91, 0.5);
   @include vendor('border-radius', '0');
   border-bottom: none;
-  margin: 0;
-  position: fixed;
-  z-index: 9999;
-  width: 100vw;
+  // margin: 0;
+  // position: fixed;
+  // z-index: 9999;
+  width: 100%;
 
   .icon-bar {
     background-color: white;
@@ -447,50 +453,50 @@ body {
 }
 
 /* Speaker */
-#speaker {
-  position: relative;
-  padding: 75px 10%;
+// #speaker {
+//   position: relative;
+//   padding: 75px 10%;
 
-  .typeform-button {
-    box-shadow: inset 0 0 0 1px $jsdc-g;
-    background-color: white;
-    color: $jsdc-g - #222;
-    position: relative;
-    z-index: 1;
-    display: block;
-    font-size: 20px;
-    &:hover {
-      background-color: $jsdc-g;
-      box-shadow: inset 0 0 0 0 $jsdc-g;
-      text-decoration: none;
-      color: white;
-    }
-  }
+//   .typeform-button {
+//     box-shadow: inset 0 0 0 1px $jsdc-g;
+//     background-color: white;
+//     color: $jsdc-g - #222;
+//     position: relative;
+//     z-index: 1;
+//     display: block;
+//     font-size: 20px;
+//     &:hover {
+//       background-color: $jsdc-g;
+//       box-shadow: inset 0 0 0 0 $jsdc-g;
+//       text-decoration: none;
+//       color: white;
+//     }
+//   }
 
-  .major {
-    text-align: center;
-    padding-top: 60px;
-    h2 {
-      color: _palette(fg-bold);
-      font-size: 28px;
-    }
-  }
+//   .major {
+//     text-align: center;
+//     padding-top: 60px;
+//     h2 {
+//       color: _palette(fg-bold);
+//       font-size: 28px;
+//     }
+//   }
 
-  #speaker-line {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    &:after {
-      background: $jsdc-g;
-      content: '';
-      display: inline-block;
-      height: 60px;
-      width: 1px;
-      position: relative;
-      left: -1px;
-    }
-  }
-}
+//   #speaker-line {
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     &:after {
+//       background: $jsdc-g;
+//       content: '';
+//       display: inline-block;
+//       height: 60px;
+//       width: 1px;
+//       position: relative;
+//       left: -1px;
+//     }
+//   }
+// }
 
 /* */
 #volunteers {
