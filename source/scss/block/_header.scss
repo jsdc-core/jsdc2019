@@ -6,8 +6,7 @@
   background: $jsdc2019-background;
   .container {
     .title {
-      height: 300px;
-      // margin-top: 30px;
+      height: 800px;
       .animation {
         position: absolute;
         top: 29.6%;
@@ -15,8 +14,7 @@
         height: 100%;
         width: 100%;
         background: url('../images/official/jsdcmain-line.svg') no-repeat;
-        background-image: url('../images/official/jsdcmain-line.svg');
-        animation: logo2 3s linear;
+        animation: logo2 2s linear;
       }
       .animation2 {
         // position: absolute;
@@ -28,20 +26,31 @@
         // transform: scale(0.5);
 
         // background-image: url('../images/official/jsdcmain-line.svg');
-      }
-      .logo {
-        height: 100%;
-        // background-image: url('../images/official/jsdcmain.svg');
-        // margin-top: 70px;
+
+
+          height: 100%;
         background: url('../images/official/jsdcmain.svg') no-repeat;
         position: absolute;
         top: 30%;
         left: 0%;
         width: 100%;
-        // transform: scale(0.5);
-        opacity: 0;
-        animation: logo 3s linear;
 
+                background: url('../images/official/jsdcmain.svg') no-repeat;
+        animation: logo 2s linear;
+
+      }
+      .logo {
+        // background: url('../images/official/jsdcmain.svg') no-repeat;
+        // position: absolute;
+        // top: 30%;
+        // left: 0%;
+        width: 100%;
+        height: 100%;
+        // opacity: 1;
+        // animation: logo 2s linear;
+        &:hover {
+          opacity: 1;
+        }
         // & > img {
         //   width: 100%;
         //   // margin-right: 60px;
@@ -50,8 +59,8 @@
         // }
       }
       .jsdc-full-name {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         color: black;
         top: 110px;
         width: 100%;
@@ -69,7 +78,7 @@
           display: block;
           font-size: 20px;
           line-height: 20px;
-          color: white;
+          color: #bebebc;
         }
       }
     }
@@ -79,26 +88,21 @@
   0% {
     left: 100%;
   }
-  50% {
-  }
-  89% {
+
+  85% {
     left: 0%;
 
     opacity: 1;
   }
-  90% {
-    // opacity: 0;
-  }
-  100% {
+  95% {
+    opacity: 1;
   }
 }
 @keyframes logo2 {
   0% {
     opacity: 0;
+  }
 
-  }
-  50% {
-  }
   90% {
     opacity: 0;
   }
