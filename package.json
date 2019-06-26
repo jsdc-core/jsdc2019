@@ -1,7 +1,7 @@
 {
-  "name": "jsdc2018",
+  "name": "jsdc2019",
   "version": "1.0.0",
-  "description": "JSDC Taiwan 2018 Main Website",
+  "description": "JSDC Taiwan 2019 Main Website",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js",
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsdc-core/jsdc2018.git"
+    "url": "git+https://github.com/jsdc-core/jsdc2019.git"
   },
   "keywords": [
     "jsdc",
-    "jsdc2018",
+    "jsdc2019",
     "js",
     "nodejs",
     "javascript"

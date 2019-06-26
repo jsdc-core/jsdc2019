@@ -5,32 +5,49 @@ block content
   section#header
     .container
       .title.row
-        .jsdc-full-name.col-md-6
-          span 2018
-          span JavaScript Developer
-          span Conference
-          br
-          span 2018.11.17
-          span 富邦國際會議中心
-          span 台北市松山區敦化南路一段108號
-        .logo.col-md-6
-          img(src='./images/official/main_visual.png')
+        .logo.col-md-12
+          .animation.col-md-12
+          .animation2.col-md-12
+          //- img(src='./images/official/jsdcmain.svg')
+        .jsdc-full-name.col-md-12
+          span The 8th JavaScript Developer Annual Conference in Taiwan
+        //- .jsdc-full-name.col-md-12
+        //-   button BUY NOW ->
       .clearfix
+    //- .container
+    //-     .time-content
+    //-       .date
+    //-         .num
+    //-         .num
+    //-       span.flag Days
+    //-       .hours
+    //-         .num
+    //-         .num
+    //-       span.flag Hours
+    //-       .minutes
+    //-         .num
+    //-         .num
+    //-       span.flag Min
+    //-       .seconds
+    //-         .num
+    //-         .num
+    //-       span.flag Sec
 
-  section#ticket
-    .container
-      .row
-        .col-md-12
-          header.text-center
-            h2 售票資訊
-      .ticket-container.row
-        .ticket-info.col-md-12
-          .ticket-1(style="max-width:400px;")
-            h3 Late Bird Ticket
-            .ticket-price
-              | TWD 2,500
-            a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
-              | 售完
+  //- section#ticket
+  //-   .container
+  //-     .row
+  //-       .col-md-12
+  //-         header.text-center
+  //-           h2 售票資訊
+  //-     .ticket-container.row
+  //-       .ticket-info.col-md-12
+  //-         .ticket-1(style="max-width:400px;")
+  //-           h3 Coming Soon
+            //- h3 Late Bird Ticket
+            //- .ticket-price
+            //-   | TWD 2,500
+            //- a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
+            //-   | 售完
         //- .ticket-info.col-md-6
         //-   .ticket-1
         //-     h3 Group Ticket (4 People)
@@ -39,70 +56,41 @@ block content
         //-     a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
         //-       | BOOK NOW
 
-  section#ticket.test
-    .container
-      .row
-        .col-md-12
-          header.text-center
-            h2 社群筆記
-      .row
-        .col-xs-6.text-center
-          a.btn.btn-info(href="https://hackmd.io/c/JSDC2018", target="_blank") HACKMD_JSDC
-        .col-xs-6.text-center
-          a.btn.btn-info(href="https://gitter.im/jsdc-core/JSDC2015/~chat#initial", target="_blank") GITTER_JSDC
+  //- section#ticket.test
+  //-   .container
+  //-     .row
+  //-       .col-md-12
+  //-         header.text-center
+  //-           h2 社群筆記
+  //-     .row
+  //-       .col-xs-6.text-center
+  //-         a.btn.btn-info(href="https://hackmd.io/c/JSDC2018", target="_blank") HACKMD_JSDC
+  //-       .col-xs-6.text-center
+  //-         a.btn.btn-info(href="https://gitter.im/jsdc-core/JSDC2015/~chat#initial", target="_blank") GITTER_JSDC
 
-  section(style="background-image: url(../images/official/background.png);background-color: #f2f2f2")
-    br
-    .container
-      .row
-        .col-md-12
-          header.text-center
-            h2 See you at JSDC!
-      .row
-        .col-md-6
-          iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F2171180176454751%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
-        .col-md-6
-          iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F1947556955305591%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
+ 
+      //- .row
+        //- .col-md-6
+        //-   iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F2171180176454751%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
+        //- .col-md-6
+        //-   iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F1947556955305591%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
 
-  section.test(style="background-image: url(../images/official/background.png);background-color: #f2f2f2")
-    br
-    .container
-      .row
-        .col-md-12
-          header.text-center
-            h2 最新消息
-      .row
-        .col-md-12
-          div(style="height: 600px;overflow: scroll;")
-            a.twitter-timeline(href="https://twitter.com/jsdc_tw") Tweets by TwitterDev 
-            script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
-    br
-  br
-  section#header(style="background-image: none")
-    .container
-      .count-down.row
-        //- .content.col-md-12
-          //- | countdown ticket
-        .clearfix
-        .time-content
-          .date
-            .num
-            .num
-          span.flag D
-          .hours
-            .num
-            .num
-          span.flag H
-          .minutes
-            .num
-            .num
-          span.flag M
-          .seconds
-            .num
-            .num
-          span.flag S
-      br
-      br
+  //- section.test(style="background-image: url(../images/official/background.png);background-color: #f2f2f2")
+  //-   br
+  //-   .container
+  //-     .row
+  //-       .col-md-12
+  //-         header.text-center
+  //-           h2 最新消息
+      //- .row
+      //-   .col-md-12
+      //-     div(style="height: 600px;overflow: scroll;")
+      //-       a.twitter-timeline(href="https://twitter.com/jsdc_tw") Tweets by TwitterDev 
+      //-       script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+    
+  
+
+      
 
   //- section#reciprocal
   //-   ul#time
