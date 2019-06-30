@@ -52,26 +52,26 @@ body .jsdc-background {
     }
 
     input[value='day-1']:checked {
-      &+label {
+      & + label {
         background-color: #28135b;
         text-decoration: underline;
       }
-      &~.day-1 {
+      & ~ .day-1 {
         display: block;
       }
-      &~.day-2 {
+      & ~ .day-2 {
         display: none;
       }
     }
     input[value='day-2']:checked {
-      &+label {
+      & + label {
         background-color: rgba(184, 203, 94, 1);
         text-decoration: underline;
       }
-      &~.day-2 {
+      & ~ .day-2 {
         display: block;
       }
-      &~.day-1 {
+      & ~ .day-1 {
         display: none;
       }
     }
@@ -144,7 +144,10 @@ body .jsdc-background {
     font-size: 16px;
     padding: 0 10px;
 
-    &.none, &.beginner, &.intermediate, &.advanced {
+    &.none,
+    &.beginner,
+    &.intermediate,
+    &.advanced {
       border-radius: 5px;
     }
     &.none {
@@ -215,29 +218,29 @@ body .jsdc-background {
         border: none;
       }
       &:before {
-        position: absolute;
-        display: block;
-        top: 0;
-        left: -217.5px;
-        color: #717171;
-        content: attr(data-date);
-        text-align: right;
-        font-weight: 400;
-        font-size: 0.9em;
-        min-width: 120px;
+        // position: absolute;
+        // display: block;
+        // top: 0;
+        // left: -217.5px;
+        // color: #717171;
+        // content: attr(data-date);
+        // text-align: right;
+        // font-weight: 400;
+        // font-size: 0.9em;
+        // min-width: 120px;
       }
       &:after {
-        position: absolute;
-        display: block;
-        top: 0;
-        box-shadow: 0 0 0 4px #28135b;
-        left: -57.85px;
-        background: #eb6f8f;
-        border-radius: 50%;
-        height: 11px;
-        width: 11px;
-        content: "";
-        top: 5px;
+        // position: absolute;
+        // display: block;
+        // top: 0;
+        // box-shadow: 0 0 0 4px #28135b;
+        // left: -57.85px;
+        // background: #eb6f8f;
+        // border-radius: 50%;
+        // height: 11px;
+        // width: 11px;
+        // content: '';
+        // top: 5px;
       }
     }
   }
@@ -258,7 +261,8 @@ body .jsdc-background {
         }
       }
 
-      .day-1, .day-2 {
+      .day-1,
+      .day-2 {
         h2 {
           margin-top: 20px;
           margin-bottom: -30px;
@@ -306,8 +310,8 @@ body .jsdc-background {
         }
         .col-md-6 {
           &:first-of-type {
-             border-bottom: 1px solid rgba(44,154,184,0.3);
-             margin-top: 65px;
+            border-bottom: 1px solid rgba(44, 154, 184, 0.3);
+            margin-top: 65px;
           }
           h3 {
             margin-top: 45px;
