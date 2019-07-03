@@ -11,6 +11,21 @@
     flex-wrap: wrap;
 }
 
+    .page-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    margin: 0.2rem 0 0.5em 0;
+    }
+    .border {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #ececec;
+    margin: 0 auto;
+    }
+
 .large-wrapper {
     display: flex;
     justify-content: flex-start;
