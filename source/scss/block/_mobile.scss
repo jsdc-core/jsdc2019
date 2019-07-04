@@ -145,9 +145,10 @@ $screen-md: 992px;
 @media (max-width: $screen-sm) {
   #header {
     padding: 0;
-
+    height: 500px;
     .container {
       .title {
+        height: 200px;
         .logo {
           text-align: center;
           padding-bottom: 25px;
@@ -156,6 +157,12 @@ $screen-md: 992px;
             margin-right: 0;
             right: -15px;
             // right: calc((100vw - 1170px) / 2 - 5px);
+          }
+          span {
+            font-size: 12px;
+            line-height: 12px;
+
+            bottom: 20%;
           }
         }
         .jsdc-full-name {
@@ -300,8 +307,11 @@ $screen-md: 992px;
   /* Header */
   #header {
     padding: 0;
+    height: 700px;
+    .container {
+   .title {
+      height: 350px;
 
-    .title {
       h2 {
         font-size: 60px;
         padding: 0;
@@ -314,6 +324,7 @@ $screen-md: 992px;
         }
       }
     }
+  }
 
     p {
       margin: 30px 0 0;
