@@ -1,26 +1,21 @@
 extends ../partials/_layout
 
 block content
-  section#about
-    .container
-      .row#about-jsdc
-        .col-xs-12.col-md-7
-          header.major
-            h2 JSDC 是什麼?
-          p JavaScript 開發者年會 (JavaScript Developer Conference，簡稱 JSDC) 是台灣最大的 JavaScript 年度性技術研討會，旨在提供台灣中高階 JavaScript 技術人才與世界最新 JavaScript 相關技術討論與分享。
-        .col-xs-12.col-md-5
-          img.image.img-responsive(src='./images/jsdc-spot.jpg', alt='JSDC 2016 現場')
-
-      .row
-        .col-xs-12.paragraph
-          header.major.text-center
-            h2 JavaScript 開發者年會
-          p.text-center
-            | JSDC 打破了壁壘，整合來自獨立開發者、企業、組織及機構的科技力量。
-          p.text-center
-            | 我們致力於知識全球化，並讓參與者重新認識 JavaScript。
-        .col-xs-12
-          img(src='./images/jsdc-2016-volunteers.jpg' style="width:100%;border-radius:5px;")
+  div(style='text-align: center')
+      h2.title About us
+      span.border
+      p.description
+        | JavaScript 開發者年會
+        | (JavaScript Developer
+        | Conference，簡稱 JSDC)
+        | 是台灣最大的
+        | JavaScript
+        | 年度性技術研討會，旨在提供台灣中高階 JavaScript 技術人才與世界最新 JavaScript 相關技術討論與分享。
+        br
+        br
+        |             JSDC 打破了壁壘，整合來自獨立開發者、企業、組織及機構的科技力量。我們致力於知識全球化，並讓參與者重新認識 JavaScript。
+      div(style='display: flex; justify-content: center;')
+        img.group(src='./images/jsdc-2016-volunteers.jpg')
 
 block js
   script.
@@ -30,4 +25,33 @@ block js
 
 block css
   style(type='text/css').
-    body .jsdc-background { background-color: #f2f2f2; }
+      * {
+      box-sizing: border-box;
+      }
+      .title {
+      font-size: 36px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      color: white;
+      margin: 0.2rem 0 0.5em 0;
+      }
+      .border {
+      display: block;
+      width: 80px;
+      height: 1px;
+      background: #ececec;
+      margin: 0 auto;
+      }
+      .description {
+      margin: 48px auto;
+      padding: 0 15px;
+      max-width: 630px;
+      line-height: 1.6em;
+      color: white;
+      letter-spacing: 2px;
+      font-size: 14px
+      }
+      .group {
+      width: 100%;
+      max-width: 720px
+      }

@@ -344,11 +344,7 @@ body {
   }
 }
 
-<<<<<<< HEAD
 /* Speaker */
-=======
-// /* Speaker */
->>>>>>> temp_develop
 // #speaker {
 //   position: relative;
 //   padding: 75px 10%;
@@ -579,7 +575,9 @@ body {
 
 #venue {
   position: relative;
-  padding: 75px 10%;
+  padding: 0 10%;
+  color:white;
+  text-align: left
 }
 
 #speaker {

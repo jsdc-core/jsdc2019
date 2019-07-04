@@ -4,10 +4,11 @@ block content
   section#venue
     .row
       .col-md-12(style="text-align:center;")
-        h1 富邦國際會議中心
-    .row
+        h2.title 富邦國際會議中心
+        span.border
+    .row(style="margin-top: 2rem")
       .col-md-12
-        h3 自行開車前往
+        h3(style="color: #ffd54f") 自行開車前往
         p
           | 臺北市松山區敦化南路一段108號B2F
           ol
@@ -15,12 +16,12 @@ block content
             li 國道三號: 由台北聯絡道下敦化南路端，直行至市民大道後右轉，至迴轉道迴轉往敦化南路經過敦化南路後，隨即至本大樓停車場停車即可。
     .row
       .col-md-12
-        h3 捷運路線
+        h3(style="color: #ffd54f") 捷運路線
         ol
           li 板南線忠孝敦化站8號出口或東區地下街9號出口，直行敦化南路至市民大道口，步行約10分鐘。
     .row
       .col-md-12
-        h3 公車路線
+        h3(style="color: #ffd54f") 公車路線
         ol
           li 市民大道口：0東 \ 33 \ 41 \ 52 \ 262 \ 275 \ 278 \ 285 \ 292 \ 605 \ 630 \ 902 \ 905 \ 906 \ 909 \ 1211 \ 5350 \ 敦化幹線
           li 市民敦化路口：0東 \ 33 \ 41 \ 52 \ 262 \ 275 \ 285 \ 292 \ 521 \ 605 \ 630 \ 902 \ 903 \ 905 \ 906 \ 909 \ 1211 \ 敦化幹線
@@ -37,3 +38,17 @@ block js
 block css
   style(type='text/css').
     body .jsdc-background { background-color: #f2f2f2; }
+     .title {
+      font-size: 36px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      color: white;
+      margin: 0 0 0.5em 0;
+      }
+      .border {
+      display: block;
+      width: 80px;
+      height: 1px;
+      background: #ececec;
+      margin: 0 auto;
+      }
