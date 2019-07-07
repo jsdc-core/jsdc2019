@@ -6,6 +6,7 @@ $jsdc-g: #34459e;
 $jsdc-b: #3096b2;
 
 $jsdc2019-background: #222;
+$jsdc2019-white: #e4e4e4;
 .c-font-white {
   color: white;
 }
@@ -63,12 +64,18 @@ body {
 
   .navbar-collapse[aria-expanded='false'] {
     display: none;
-  }
 
+  }
+ 
   .navbar-collapse[aria-expanded='true'] {
     display: block;
     background-color: $jsdc2019-background;
+    // height:100vh;
+    overflow: hidden;
+
   }
+
+
   ul {
     // display: flex;
     // list-style: none;
@@ -77,7 +84,7 @@ body {
       z-index: 9999;
 
       a {
-        color: #bebebc;
+        color: $jsdc2019-white;
 
         &:hover {
           color: #ffc825;
@@ -282,10 +289,10 @@ body {
   // background-repeat: no-repeat;
   // background-size: contain;
   position: relative;
-  padding: 60px 20px 0;
+  padding: 100px 20px 0;
 
   #about-jsdc {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $jsdc2019-white;
     // border-radius: _size(border-radius);
     padding: 60px 15px;
 
@@ -343,9 +350,36 @@ body {
       width: 1px;
     }
   }
+  .title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $jsdc2019-white;
+    margin: 0.2rem 0 0.5em 0;
+  }
+  .border {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #ececec;
+    margin: 0 auto;
+  }
+  .description {
+    margin: 48px auto;
+    padding: 0 15px;
+    max-width: 630px;
+    line-height: 1.6em;
+    color: $jsdc2019-white;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .group {
+    width: 100%;
+    max-width: 720px;
+  }
 }
 
-// /* Speaker */
+/* Speaker */
 // #speaker {
 //   position: relative;
 //   padding: 75px 10%;
@@ -551,7 +585,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  padding: 63px 20px 0;
+  padding: 100px  0;
 
   & ~ .swal2-container {
     img {
@@ -576,19 +610,19 @@ body {
 
 #venue {
   position: relative;
-  padding: 0 10%;
-  color:white;
-  text-align: left
+  padding: 100px 0;  
+  color: $jsdc2019-white;
+  text-align: left;
 }
 
 #speaker {
   position: relative;
-  padding: 75px 10%;
+  padding: 100px  0; 
 }
 
 #sponsors {
   position: relative;
-  padding: 75px 10%;
+  padding: 100px  0; 
 
   & > .row {
     .sponsor-content-area:not(:first-child) {

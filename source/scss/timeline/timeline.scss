@@ -1,3 +1,4 @@
+$jsdc2019-white:#e4e4e4;
 // @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700";
 /* Timeline */
 // body {
@@ -27,22 +28,21 @@ body .jsdc-background {
     & > label {
       font-size: 24px;
       padding: 10px 35px;
-      color: white;
+      color: $jsdc2019-white;
       font-weight: bold;
       width: 50%;
-      background-color: rgba(44, 154, 184, 0.7);
+      background-color: rgb(25, 184, 236);
       border-radius: 5px 0 0 5px;
 
       &:hover {
-        background-color: rgba(44, 154, 184, 1);
+        background-color: rgb(1, 137, 184);
       }
 
       &:last-of-type {
-        background-color: rgba(184, 203, 94, 0.7);
+        background-color: rgb(25, 184, 236);
         border-radius: 0 5px 5px 0;
-
         &:hover {
-          background-color: rgba(184, 203, 94, 1);
+          background-color: rgb(1, 137, 184);
         }
       }
 
@@ -53,9 +53,9 @@ body .jsdc-background {
 
     input[value='day-1']:checked {
       & + label {
-        width: 100%;
-        background-color: #ffc825;
-        border-radius: 5px;
+        background-color: rgb(1, 137, 184);
+        // border-bottom: 1px white solid;
+        // color:rgb(255, 221, 96);
       }
       & ~ .day-1 {
         display: block;
@@ -66,8 +66,10 @@ body .jsdc-background {
     }
     input[value='day-2']:checked {
       & + label {
-        background-color: rgba(184, 203, 94, 1);
-        text-decoration: underline;
+        background-color: rgb(1, 137, 184);
+        // border: 1px white solid;
+        // color:rgb(255, 221, 96);
+
       }
       & ~ .day-2 {
         display: block;
@@ -78,9 +80,8 @@ body .jsdc-background {
     }
   }
   .rooms {
-    margin: 0 auto;
-    max-width: 75%;
-    text-align: left;
+   
+    text-align: center;
 
     > .col-md-6 {
       padding-left: 40px;
@@ -92,11 +93,12 @@ body .jsdc-background {
   }
   .room {
     display: none;
-    // position: absolute;
     min-width: 50px;
     text-align: center;
     border-radius: 5px;
-    color: white;
+    color: $jsdc2019-white;
+   width:50%;
+   margin:25px 0;
 
     &.room-101 {
       background-color: #f29c67;
@@ -123,22 +125,27 @@ body .jsdc-background {
       text-align: center;
       line-height: 40px;
       border-radius: 50%;
-      color: white;
+      color: $jsdc2019-white;
     }
     .back-top {
       background-color: #bbb;
     }
   }
+  .label{
+    margin-right: 5px;
+
+  }
   .tag-groups {
     margin:10px 0;
   }
   .event-lang {
-    padding: 0 12px;
-    border: 1px solid rgba(128, 128, 128, 0.7);
+    // padding: 0 12px;
+    // border: 1px solid rgba(128, 128, 128, 0.7);
     border-radius: 5px;
-    margin-right: 5px;
-    color: gray;
+    color: black;
     height:25px;
+    background-color: #FFC800;
+
   }
   .event-level {
     font-size: 16px;
@@ -173,14 +180,13 @@ body .jsdc-background {
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
-    color: white;
+    color: $jsdc2019-white;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0 auto 50px auto;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
     font-size: 1.03em;
-    // padding: 30px;
     list-style: none;
     text-align: left;
     font-weight: 1;
@@ -210,6 +216,10 @@ body .jsdc-background {
     h1,h2,h3,h4,h5,h6{
       margin:0;
     }
+    .time{
+      width:20%;
+      padding:0 1% ;
+    }
     .event {
       border-bottom: 1px solid #fff;
       padding: 25px 0;
@@ -218,8 +228,8 @@ body .jsdc-background {
       display:flex;
       align-items: center;
       &:last-of-type {
-        padding-bottom: 0;
-        margin-bottom: 0;
+        // padding-bottom: 0;
+        // margin-bottom: 0;
         border: none;
       }
       &:before {
@@ -343,6 +353,9 @@ body .jsdc-background {
           text-align: center;
           margin-right: 2px;
         }
+      }
+      .time{
+        padding-left:15px;
       }
     }
   }

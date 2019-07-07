@@ -2,72 +2,73 @@ extends ../partials/_layout
 
 block content
   section#agenda
-    nav.navbar-mobile
-      a.back-top(href='#agenda')
-        i.fa.fa-arrow-up
-    .container(style="padding-top:20px; background-color: #222")
-      .row
-        .col-md-12.date
-          - var day = 0;
-          each rooms, index in agenda
-            - day = day + 1;
-            if (day == 1)
-              input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day) checked)
-            else
-              input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day))
-            label(for='day-'+day) #{index}
+    .container
+      nav.navbar-mobile
+        a.back-top(href='#agenda')
+          i.fa.fa-arrow-up
+      .container(style="padding-top:20px; background-color: #222")
+        .row
+          .col-md-12.date
+            - var day = 0;
+            each rooms, index in agenda
+              - day = day + 1;
+              if (day == 1)
+                input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day) checked)
+              else
+                input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day))
+              label(for='day-'+day) #{index}
 
-          .row.rooms
-            .col-md-2
+            .row.rooms
+              .col-md-2
 
-            .col-md-5
-              h2 A 廳
-            .col-md-5
-              h2 C 廳
+              .col-md-5
+                h2 A 廳
+              .col-md-5
+                h2 C 廳
 
-          - day = 0;
-          each rooms, index in agenda
-            - day = day + 1;
-            ul.timeline(class=('day-'+day))
-              each agendaContents, agendaIndex in rooms
-                li.event(data-date=agendaContents.time)
-                  .col-md-2.time
-                    if (agendaContents.time)
-                      h5 #{agendaContents.time}
-                  .col-md-9
-                    each content, contentIndex in agendaContents.list
-                      if (contentIndex === 'all')
-                        .col-md-6
-                          if (content.name)
-                            h3 #{content.name}
-                      else
-                        .col-md-6(style="cursor:pointer;" onclick="agendaDetail('"+index+"',"+agendaIndex+","+contentIndex+")")
-                          span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
+            - day = 0;
+            each rooms, index in agenda
+              - day = day + 1;
+              ul.timeline(class=('day-'+day))
+                each agendaContents, agendaIndex in rooms
+                  li.event(data-date=agendaContents.time)
+                    .col-md-2.time
+                      if (agendaContents.time)
+                        h5 #{agendaContents.time}
+                    .col-md-10
+                      each content, contentIndex in agendaContents.list
+                        if (contentIndex === 'all')
+                          .col-md-6
+                            if (content.name)
+                              h3 #{content.name}
+                        else
+                          .col-md-6(style="cursor:pointer;" onclick="agendaDetail('"+index+"',"+agendaIndex+","+contentIndex+")")
+                            span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
 
-                          if (content.speaker)
-                            - var info = speakers[content.speaker];
-                            h3 #{info.name}
-                            .tag-groups
-                              if (languages[info.agenda.lang])
-                                span.event-lang #{languages[info.agenda.lang]}
-                              if (info.agenda.slide)
-                                a.label.label-info(target="_blank" href=info.agenda.slide) Slide
-                              if (info.agenda.youtube)
-                                a.label.label-danger(target="_blank" href=info.agenda.youtube) Youtube
-                              each value in info.agenda.levels
-                                span.event-level(data-level=agendaLevel[value] class=value)
+                            if (content.speaker)
+                              - var info = speakers[content.speaker];
+                              h3 #{info.name}
+                              .tag-groups
+                                if (languages[info.agenda.lang])
+                                  span.label.event-lang #{languages[info.agenda.lang]}
+                                if (info.agenda.slide)
+                                  a.label.label-info(target="_blank" href=info.agenda.slide) Slide
+                                if (info.agenda.youtube)
+                                  a.label.label-danger(target="_blank" href=info.agenda.youtube) Youtube
+                                each value in info.agenda.levels
+                                  span.event-level(data-level=agendaLevel[value] class=value)
 
-                            h4
-                              | #{info.agenda.title}
-                              if (info.agenda.title2)
-                                br
-                                | #{info.agenda.title2}
-                          else if (content.name)
-                            h3 #{content.name}
-                          else
-                            h3(style="border-bottom:none;") TBD
-                            h4
-                              | ---
+                              h4
+                                | #{info.agenda.title}
+                                if (info.agenda.title2)
+                                  br
+                                  | #{info.agenda.title2}
+                            else if (content.name)
+                              h3 #{content.name}
+                            else
+                              h3(style="border-bottom:none;") TBD
+                              h4
+                                | ---
 
   script.
     var agendaData = !{JSON.stringify(agenda)};

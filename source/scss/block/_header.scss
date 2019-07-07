@@ -2,31 +2,30 @@
 #header {
   position: relative;
   height: 100%;
-  // padding: 13vh 20px 0;
+  padding: 100px  0;  
   background: $jsdc2019-background;
   .container {
     .title {
-      height: 400px;
-      margin-top: 10%;
+      // height: 400px;
 
-      .animation {
-        position: absolute;
-        left: -0.8%;
+      .logo-animation {
+        // position: absolute;
+        // left: 0;
         height: 100%;
         width: 100%;
-        background: url('../images/official/jsdcmain-line.svg') no-repeat;
-        animation: logo2 2s linear;
+        // background: url('../images/official/jsdcmain.svg') no-repeat;
+        // animation: logo-animation 2s linear;
+        display:block;
       }
-      .animation2 {
+      .logo-animation-line {
         height: 100%;
-        background: url('../images/official/jsdcmain.svg') no-repeat;
         position: absolute;
-        left: 0%;
+        // left: -0.7%;
         width: 100%;
-        opacity: 0;
+        // opacity: 0;
 
-        background: url('../images/official/jsdcmain.svg') no-repeat;
-        animation: logo 2s linear;
+        // background: url('../images/official/jsdcmain-line.svg') no-repeat;
+        // animation: logo-animation-line 2s linear;
       }
       .logo {
         display: flex;
@@ -40,7 +39,7 @@
           display: block;
           font-size: 20px;
           line-height: 20px;
-          color: #bebebc;
+          color: $jsdc2019-white;
           position: absolute;
           bottom: 20%;
         }
@@ -50,25 +49,26 @@
         width: 100%;
         text-align: center;
         button {
-          border: 1px solid white;
-          color: white;
+          border: 1px solid $jsdc2019-white;
+          color: $jsdc2019-white;
           width: 50%;
+          margin-top:50px;
           &:hover {
-            background: white;
+            background: $jsdc2019-white;
             color: #222;
             border: none;
           }
         }
         span {
           font-size: 12px;
-          color: white;
+          color:$jsdc2019-white;
           display: block;
         }
       }
     }
   }
 }
-@keyframes logo {
+@keyframes logo-animation-line {
   0% {
     opacity: 1;
   }
@@ -80,7 +80,7 @@
     opacity: 0;
   }
 }
-@keyframes logo2 {
+@keyframes logo-animation {
   0% {
     opacity: 0;
   }
