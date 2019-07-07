@@ -1,0 +1,24 @@
+extends ../partials/_layout
+
+block content
+  section#team
+      each team, index in teams
+        div(style='text-align: center;')
+          h2.title #{index}
+        div.team-box    
+          each val, index in team
+            .team-wrapper
+                .team-img-box
+                  img(src='./images/teams/' + val.img + '.JPG', alt='')
+                .team-text-box
+                  p #{val.name}
+block js
+  script(src='./js/masonry.pkgd.min.js')
+  script.
+    setTimeout(function(){
+      document.querySelectorAll('#navbar ul li')[6].classList.add('active');
+    }, 0);
+
+block css
+  style(type='text/css').
+    - body

@@ -620,6 +620,48 @@ body {
   padding: 100px  0; 
 }
 
+#team {
+  position: relative;
+  padding: 100px  0; 
+
+  .team-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 10%;
+  }
+
+  .team-wrapper {
+      width: 15%;
+      padding: 25px 25px 0 25px;
+  }
+
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .team-img-box {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 50%
+  }
+
+  .team-text-box {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      letter-spacing: 1px
+  }
+
+  p {
+      margin: 0 0 10px;
+  }
+}
+
 #sponsors {
   position: relative;
   padding: 100px  0; 
