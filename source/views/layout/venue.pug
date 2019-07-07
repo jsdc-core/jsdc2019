@@ -3,7 +3,7 @@ extends ../partials/_layout
 block content
   section#venue
     .row
-      .col-md-12(style="text-align:center;padding-top:70px")
+      .col-md-12(style="text-align:center;")
         h2.title 富邦國際會議中心
         span.border
     .row(style="margin-top: 2rem")
@@ -34,21 +34,3 @@ block js
     setTimeout(function(){
       document.querySelectorAll('#navbar ul li')[2].classList.add('active');
     }, 0);
-
-block css
-  style(type='text/css').
-    body .jsdc-background { background-color: #f2f2f2; }
-     .title {
-      font-size: 36px;
-      text-transform: uppercase;
-      letter-spacing: .2em;
-      color: white;
-      margin: 0 0 0.5em 0;
-      }
-      .border {
-      display: block;
-      width: 80px;
-      height: 1px;
-      background: #ececec;
-      margin: 0 auto;
-      }
