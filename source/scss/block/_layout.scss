@@ -70,7 +70,6 @@ body {
   .navbar-collapse[aria-expanded='true'] {
     display: block;
     background-color: $jsdc2019-background;
-    // height:100vh;
     overflow: hidden;
 
   }
@@ -79,6 +78,7 @@ body {
   ul {
     // display: flex;
     // list-style: none;
+    padding-top:4px;
     li {
       cursor: pointer;
       z-index: 9999;
@@ -305,13 +305,13 @@ body {
     }
   }
 
-  p {
-    color: _palette(fg-bold);
-    text-align: justify;
-    margin: 0 0 30px;
-    font-size: 16px;
-    line-height: 2;
-  }
+  // p {
+  //   color: _palette(fg-bold);
+  //   text-align: justify;
+  //   margin: 0 0 30px;
+  //   font-size: 16px;
+  //   line-height: 2;
+  // }
 
   .row + .row {
     padding-top: 60px;
@@ -350,13 +350,13 @@ body {
       width: 1px;
     }
   }
-  .title {
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: $jsdc2019-white;
-    margin: 0.2rem 0 0.5em 0;
-  }
+  // .title {
+  //   font-size: 36px;
+  //   text-transform: uppercase;
+  //   letter-spacing: 0.2em;
+  //   color: $jsdc2019-white;
+  //   margin: 0.2rem 0 0.5em 0;
+  // }
   .border {
     display: block;
     width: 80px;
@@ -610,7 +610,7 @@ body {
 
 #venue {
   position: relative;
-  padding: 100px 0;  
+  padding: 100px 10%;  
   color: $jsdc2019-white;
   text-align: left;
 }
