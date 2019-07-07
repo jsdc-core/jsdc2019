@@ -1,9 +1,9 @@
 extends ../partials/_layout
 
 block content
-  section#about
+  section#sponsors
     div(style='text-align: center;')
-        h2.page-title Gold Sponsors
+        h2.page-title Sponsors
         span.border
     div.large-wrapper
         each val, index in sponsors.gold
@@ -12,7 +12,6 @@ block content
                 .img-box
                   .overlay
                     p.intro-text.text-center !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
-                    // <br>
                     a(href=val.link)
                       span.visit
                         span Visit

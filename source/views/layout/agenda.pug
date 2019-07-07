@@ -17,14 +17,19 @@ block content
               else
                 input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day))
               label(for='day-'+day) #{index}
-
-            .row.rooms
-              .col-md-2
-
-              .col-md-5
-                h2 A 廳
-              .col-md-5
-                h2 C 廳
+            
+            -  day = 0;
+            each room, index in rooms
+              - day = day + 1;
+              .row.rooms(class=('day-'+day))
+                each roomContents, roomIndex in room
+                  if (day == 1)
+                    .col-md-12
+                      h2 #{roomContents}
+                  else 
+                    .col-md-6
+                      h2 #{roomContents}
+                  
 
             - day = 0;
             each rooms, index in agenda
