@@ -6,7 +6,7 @@ $screen-md: 992px;
 @media (max-width: $screen-xs) {
   /* Header */
   #header {
-    padding: 100px 20px ;
+    padding: 100px 20px;
 
     .container {
       width: 100%;
@@ -22,7 +22,6 @@ $screen-md: 992px;
           }
         }
         .jsdc-full-name {
-
           span:first-child {
             font-size: 1.2rem;
             line-height: 160%;
@@ -112,7 +111,11 @@ $screen-md: 992px;
       }
     }
   }
-
+  #venue {
+    h3 {
+      text-align: center;
+    }
+  }
   #volunteers {
     padding: 80px 60px;
   }
@@ -151,7 +154,7 @@ $screen-md: 992px;
           margin-top: 10px;
 
           span:first-child {
-            font-size: 1.5rem;;
+            font-size: 1.5rem;
             line-height: 150%;
           }
         }
@@ -188,8 +191,6 @@ $screen-md: 992px;
             font-size: 1.6rem;
             line-height: 20px;
           }
-
-      
         }
       }
       .count-down {

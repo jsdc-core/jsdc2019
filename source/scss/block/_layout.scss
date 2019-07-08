@@ -681,14 +681,19 @@ body {
     background-color: transparent;
   }
 }
-
+.fb-share-button{
+  width:100%;
+}
 #google_translate_element {
   .goog-te-gadget-simple {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 2px 7px;
-    border-radius: 15px;
-    color: white;
+    // border: 0;
+    background-color: #222;
+    // padding: 2px 7px;
+    // border-radius: 15px;
+    // color: white;
+    img{
+      opacity:0;
+    }
     a,
     span {
       color: #000;
