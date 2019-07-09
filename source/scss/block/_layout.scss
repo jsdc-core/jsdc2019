@@ -741,3 +741,40 @@ body {
     }
   }
 }
+
+
+@media (max-width: 1480px) and (min-width: 1024px) {
+  #team {
+    .team-box {
+        margin: 20px 5%
+    }
+
+    .team-wrapper {
+        width: 20%;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  #team {
+    .team-box {
+        margin: 20px 5%
+    }
+
+    .team-wrapper {
+        width: 20%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #team {
+    .team-box {
+        margin: 20px 5%
+    }
+
+    .team-wrapper {
+        width: 50%;
+    }
+  }
+}
