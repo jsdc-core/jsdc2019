@@ -1,4 +1,4 @@
-$jsdc2019-white:#e4e4e4;
+$jsdc2019-white: #e4e4e4;
 // @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700";
 /* Timeline */
 // body {
@@ -31,18 +31,20 @@ body .jsdc-background {
       color: $jsdc2019-white;
       font-weight: bold;
       width: 50%;
-      background-color: rgb(25, 184, 236);
+      background-color: #eaeaea;
       border-radius: 5px 0 0 5px;
-
+      color: black;
       &:hover {
-        background-color: rgb(1, 137, 184);
+        background-color: rgb(255, 221, 96);
       }
 
       &:last-of-type {
-        background-color: rgb(25, 184, 236);
+        background-color: #eaeaea;
         border-radius: 0 5px 5px 0;
+        color: black;
+
         &:hover {
-          background-color: rgb(1, 137, 184);
+          background-color: rgb(255, 221, 96);
         }
       }
 
@@ -53,9 +55,7 @@ body .jsdc-background {
 
     input[value='day-1']:checked {
       & + label {
-        background-color: rgb(1, 137, 184);
-        // border-bottom: 1px white solid;
-        // color:rgb(255, 221, 96);
+        background-color: #ffc800;
       }
       & ~ .day-1 {
         display: block;
@@ -66,10 +66,7 @@ body .jsdc-background {
     }
     input[value='day-2']:checked {
       & + label {
-        background-color: rgb(1, 137, 184);
-        // border: 1px white solid;
-        // color:rgb(255, 221, 96);
-
+        background-color: #ffc800;
       }
       & ~ .day-2 {
         display: block;
@@ -80,7 +77,6 @@ body .jsdc-background {
     }
   }
   .rooms {
-   
     text-align: center;
 
     > .col-md-6 {
@@ -97,8 +93,8 @@ body .jsdc-background {
     text-align: center;
     border-radius: 5px;
     color: $jsdc2019-white;
-   width:50%;
-   margin:25px 0;
+    width: 50%;
+    margin: 25px 0;
 
     &.room-101 {
       background-color: #f29c67;
@@ -131,21 +127,19 @@ body .jsdc-background {
       background-color: #bbb;
     }
   }
-  .label{
+  .label {
     margin-right: 5px;
-
   }
   .tag-groups {
-    margin:10px 0;
+    margin: 10px 0;
   }
   .event-lang {
     // padding: 0 12px;
     // border: 1px solid rgba(128, 128, 128, 0.7);
     border-radius: 5px;
     color: black;
-    height:25px;
-    background-color: #FFC800;
-
+    height: 25px;
+    background-color: #ffc800;
   }
   .event-level {
     font-size: 16px;
@@ -213,19 +207,24 @@ body .jsdc-background {
     p {
       word-wrap: break-word;
     }
-    h1,h2,h3,h4,h5,h6{
-      margin:0;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
     }
-    .time{
-      width:20%;
-      padding:0 1% ;
+    .time {
+      width: 20%;
+      padding: 0 1%;
     }
     .event {
       border-bottom: 1px solid #fff;
       padding: 25px 0;
       // margin-bottom: 50px;
       position: relative;
-      display:flex;
+      display: flex;
       align-items: center;
       &:last-of-type {
         // padding-bottom: 0;
@@ -354,8 +353,8 @@ body .jsdc-background {
           margin-right: 2px;
         }
       }
-      .time{
-        padding-left:15px;
+      .time {
+        padding-left: 15px;
       }
     }
   }
