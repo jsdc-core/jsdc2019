@@ -2,8 +2,11 @@ extends ../partials/_layout
 
 block content
   section#speaker
+    .container
       div(style='text-align: center;')
-          h2.title 9/28 「框架大亂鬥」講者
+          h3.title-date 9/28
+          h3.title-date JavaScript 新技術的入門與導入
+          h2.title 講者
           span.border
       div.large-wrapper
           each val, index in speakers
@@ -12,8 +15,7 @@ block content
                   .img-box
                     .overlay
                       p.intro-text.text-center
-                        | LEADBEST 資深技術經理, 前台灣電商 friDay 購物前端負責人致力於前端開發與跨平台整合, 擁有多年
-                        | Mobile Web / Desktop Web / SPA 等前端開發經驗 LEADBEST 為區塊鏈一級市場的一站式投資金融管理平台
+                     
                       // <br>
                       ul.sc-icons
                         li
@@ -28,8 +30,8 @@ block content
                         li
                           a(href='#')
                             i.fa.fa-linkedin
-                    //- img.img-responsive(src='./images/speakers/test.jpg', alt='')
-                    img.img-responsive(src='', alt='')
+                    if val.image
+                      img.img-responsive(src='./images/speakers/'+val.image, alt='')
                   .text-box.text-center
                     h5.nopadding.title #{val.name}
                     p.subtext #{val.company}

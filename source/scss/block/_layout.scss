@@ -40,7 +40,13 @@ body {
 }
 
 /* Start form small devices */
-
+.title-date{
+  color:#727272;
+  margin:1.1rem;
+}
+.title{
+}
+ 
 #navbar {
   @include vendor('border-radius', '0');
   border-bottom: none;
@@ -374,8 +380,9 @@ body {
     font-size: 14px;
   }
   .group {
-    width: 100%;
-    max-width: 720px;
+    // max-width: 720px;
+    width:100%;
+    height:100%;
   }
 }
 
@@ -610,7 +617,7 @@ body {
 
 #venue {
   position: relative;
-  padding: 100px 10%;  
+  padding: 100px 0;  
   color: $jsdc2019-white;
   text-align: left;
 }
@@ -636,11 +643,6 @@ body {
       padding: 25px 25px 0 25px;
   }
 
-  img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-  }
 
   .team-img-box {
       position: relative;
