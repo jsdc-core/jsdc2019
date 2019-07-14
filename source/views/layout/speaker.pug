@@ -10,28 +10,31 @@ block content
           span.border
       div.large-wrapper
           each val, index in speakers
+           if val.company
               .wrapper
                 .main-box
                   .img-box
                     .overlay
-                      p.intro-text.text-center
-                     
+                      div.intro-text.text-center
+                        p #{val.description}
                       // <br>
                       ul.sc-icons
+                        //- li
+                        //-   a(href='#')
+                        //-     i.fa.fa-twitter
                         li
-                          a(href='#')
-                            i.fa.fa-twitter
+                          a(href=val.links.github)
+                            i.fa.fa-github
                         li
-                          a(href='#')
+                          a(href=val.links.facebook)
                             i.fa.fa-facebook
-                        li
-                          a(href='#')
-                            i.fa.fa-google-plus
-                        li
-                          a(href='#')
-                            i.fa.fa-linkedin
-                    if val.image
-                      img.img-responsive(src='./images/speakers/'+val.image, alt='')
+                        //- li
+                        //-   a(href=val.links.facebook)
+                        //-     i.fa.fa-google-plus
+                        //- li
+                        //-   a(href='#')
+                        //-     i.fa.fa-linkedin
+                    img.img-responsive(src='./images/speakers/'+val.image, alt='')
                   .text-box.text-center
                     h5.nopadding.title #{val.name}
                     p.subtext #{val.company}
