@@ -39,48 +39,47 @@ block content
                     .text-information
                         .intro-text.text-center
                           p #{val.description}
-      //- section#speaker
-      //-   .container
-      //-   if speakers.length == 0
-      //-     h2.text-center TBD
-      //-   else    
-      //- .container
-      //-   .row
-      //-     .col-md-12(style="text-align:center;")
-      //-       h1 JSDC 2019 講者
-      //-   .grid.row
-      //-     each val, index in speakers
-      //-       .grid-item.col-md-4(style="min-height:400px;")
-      //-         //- if val.isKeynote
-      //-           label.label.label-success.label-sm.is-keynote
-      //-             | Keynote
-      //-         .thumbnail(style="min-height:400px;")
-      //-           if val.image
-      //-             img.img-circle(src='./images/speakers/' + val.image, width='200')
-      //-           else
-      //-             img.img-circle(src='./images/jsdc-mascot-150.jpg', width='200')
-      //-           .caption
-      //-             h3.text-center.author-name #{val.name}
-      //-             .text-center #{val.company || 'None'}
-      //-             .text-center
-      //-               if val.links.blog
-      //-                 a.btn.btn-link.btn-github(target='_blank' href=val.links.blog)
-      //-                   i.fa.fa-link
-      //-               if val.links.github
-      //-                 a.btn.btn-link.btn-link(target='_blank' href=val.links.github)
-      //-                   i.fa.fa-github
-      //-               if val.links.twitter
-      //-                 a.btn.btn-link.btn-link(target='_blank' href=val.links.twitter)
-      //-                   i.fa.fa-twitter
-      //-               if val.links.medium
-      //-                 a.btn.btn-link.btn-link(target='_blank' href=val.links.medium)
-      //-                   i.fa.fa-medium
-      //-               if val.links.links
-      //-                 a.btn.btn-link.btn-link(target='_blank' href=val.links.links)
-      //-                   i.fa.fa-link
-      //-               if !val.links.links && !val.links.blog && !val.links.github && !val.links.twitter && !val.links.medium
-      //-                 i.fa.fa-unlink(style="visibility:hidden;")
-      //-             div #{val.description}
+      .row
+        .col-md-12
+          <hr>
+      div(style='text-align: center;')
+          h3.title-date 10/26
+          h3.title-date JavaScript 穩定之後，然後呢？
+          h2.title 講者
+          span.border
+      div.large-wrapper
+          each val, index in mainSpeakers
+              .wrapper
+                .main-box
+                  .img-box
+                    img.img-responsive(src='./images/speakers/'+val.image, alt='')
+                  .text-box.text-center
+                    h5.nopadding.title #{val.name}
+                    p.subtext #{val.company}
+                    ul.sc-icons
+                      if val.links.twitter
+                        li
+                          a(href=val.links.twitter)
+                            i.fa.fa-twitter
+                      if val.links.github
+                        li
+                          a(href=val.links.github)
+                            i.fa.fa-github
+                      if val.links.facebook
+                        li
+                          a(href=val.links.facebook)
+                            i.fa.fa-facebook
+                      //- li
+                      //-   a(href=val.links.facebook)
+                      //-     i.fa.fa-google-plus
+                      //- li
+                      //-   a(href='#')
+                      //-     i.fa.fa-linkedin
+                  if val.description
+                    .text-information
+                        .intro-text.text-center
+                          p #{val.description}      
+   
 
 block js
   script(src='./js/masonry.pkgd.min.js')
