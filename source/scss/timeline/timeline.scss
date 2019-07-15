@@ -97,10 +97,14 @@ body .jsdc-background {
     margin: 25px 0;
 
     &.room-101 {
-      background-color: #f29c67;
+      background-color: #0099B4;
+      color: $jsdc2019-white;
+
     }
     &.room-102 {
-      background-color: #ff4242;
+      background-color: #0099B4;
+      color: $jsdc2019-white;
+
     }
 
     &:before {
