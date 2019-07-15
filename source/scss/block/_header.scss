@@ -20,7 +20,6 @@
         width: 100%;
         max-width: 1440px;
         animation: logo-animation 2s linear;
-   
       }
       .logo-animation-line {
         position: absolute;
@@ -38,7 +37,6 @@
         }
       }
       .jsdc-full-name {
-        margin-top:25px;
         width: 100%;
         text-align: center;
         button {
@@ -57,7 +55,7 @@
           font-size: 25px;
           line-height: 25px;
           color: $jsdc2019-white;
-          font-weight:bold;
+          font-weight: bold;
 
           margin-bottom: 35px;
         }
@@ -67,6 +65,20 @@
 
           color: $jsdc2019-white;
           display: block;
+        }
+        .sub-title {
+          // font-weight: bold;
+          color: #ffc825;
+
+        }
+        .division {
+        
+          span{
+            height: 1px;
+            // background-color: $jsdc2019-white;
+            margin:15px;
+            // text-align:center;
+          }
         }
       }
     }

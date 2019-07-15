@@ -25,28 +25,15 @@ body {
   line-height: 23px;
 
   .jsdc-background {
-    // background-image: url('../images/official/background.png');
-    // background-image: url('../images/official/jsdc-background.png');
-    // background-size: 100px;
-    // width: 100%;
-    // height: 100%;
-    // width: 100vw;
-    // height: 100vh;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // z-index: -1;
   }
 }
 
 /* Start form small devices */
-.title-date{
-  color:#727272;
-  margin:1.1rem;
+.title-date {
+  color: #727272;
+  margin: 1.1rem;
 }
-.title{
-}
- 
+
 #navbar {
   @include vendor('border-radius', '0');
   border-bottom: none;
@@ -70,32 +57,27 @@ body {
 
   .navbar-collapse[aria-expanded='false'] {
     display: none;
-
   }
- 
+
   .navbar-collapse[aria-expanded='true'] {
     display: block;
     background-color: $jsdc2019-background;
     overflow: hidden;
-
+  }
+  ul {
+    padding-top: 4px;
   }
 
+  li {
+    cursor: pointer;
+    z-index: 9999;
 
-  ul {
-    // display: flex;
-    // list-style: none;
-    padding-top:4px;
-    li {
-      cursor: pointer;
-      z-index: 9999;
+    a {
+      color: $jsdc2019-white;
 
-      a {
-        color: $jsdc2019-white;
-
-        &:hover {
-          color: #ffc825;
-          background-color: none;
-        }
+      &:hover {
+        color: #ffc825;
+        background-color: none;
       }
     }
 
@@ -107,12 +89,10 @@ body {
     }
   }
 }
-
 /* Ticket */
 #ticket {
   padding-top: 60px;
   background-color: #f2f2f2;
-  // background-image: url(../images/official/background.png);
 
   .ticket-container {
     .ticket-info {
@@ -120,16 +100,12 @@ body {
         width: 75%;
         margin: 0 auto 35px;
         text-align: center;
-        // padding: 15px;
         padding: 25px 10px;
-        //background-image: url(../images/official/ticket-bg.png);
-        //background-size: 100% 100%;
-        // border: 2px solid rgba(51, 51, 51, 0.5);
+
         color: white;
         background-repeat: repeat-y;
         background-size: 100% 1%;
         border: 2px solid;
-        // border-top: 2px solid;
 
         .ticket-price,
         .ticket-booking {
@@ -198,8 +174,6 @@ body {
 
 /* News */
 #news {
-  // background-color: white;
-  // background-image:url('images/overlay3.svg');
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -311,14 +285,6 @@ body {
     }
   }
 
-  // p {
-  //   color: _palette(fg-bold);
-  //   text-align: justify;
-  //   margin: 0 0 30px;
-  //   font-size: 16px;
-  //   line-height: 2;
-  // }
-
   .row + .row {
     padding-top: 60px;
 
@@ -356,13 +322,7 @@ body {
       width: 1px;
     }
   }
-  // .title {
-  //   font-size: 36px;
-  //   text-transform: uppercase;
-  //   letter-spacing: 0.2em;
-  //   color: $jsdc2019-white;
-  //   margin: 0.2rem 0 0.5em 0;
-  // }
+
   .border {
     display: block;
     width: 80px;
@@ -381,56 +341,10 @@ body {
   }
   .group {
     // max-width: 720px;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
 }
-
-/* Speaker */
-// #speaker {
-//   position: relative;
-//   padding: 75px 10%;
-
-//   .typeform-button {
-//     box-shadow: inset 0 0 0 1px $jsdc-g;
-//     background-color: white;
-//     color: $jsdc-g - #222;
-//     position: relative;
-//     z-index: 1;
-//     display: block;
-//     font-size: 20px;
-//     &:hover {
-//       background-color: $jsdc-g;
-//       box-shadow: inset 0 0 0 0 $jsdc-g;
-//       text-decoration: none;
-//       color: white;
-//     }
-//   }
-
-//   .major {
-//     text-align: center;
-//     padding-top: 60px;
-//     h2 {
-//       color: _palette(fg-bold);
-//       font-size: 28px;
-//     }
-//   }
-
-//   #speaker-line {
-//     position: absolute;
-//     top: 0;
-//     left: 50%;
-//     &:after {
-//       background: $jsdc-g;
-//       content: '';
-//       display: inline-block;
-//       height: 60px;
-//       width: 1px;
-//       position: relative;
-//       left: -1px;
-//     }
-//   }
-// }
 
 /* */
 #volunteers {
@@ -540,51 +454,6 @@ body {
   }
 }
 
-/* Sponsor */
-// #sponsor{
-//   position: relative;
-//   padding: 80px 10%;
-
-//   .major {
-//     h2{
-//       color: $jsdc-b - #111;
-//       font-size: 26px;
-//     }
-//     &:after {
-//       background: $jsdc-b;
-//     }
-//   }
-
-//   .typeform-button {
-//     box-shadow: inset 0 0 0 1px $jsdc-b;
-//     background-color: white;
-//     color: $jsdc-b - #222;
-//     position: relative;
-//     z-index: 1;
-//     display: block;
-//     margin: 0 auto;
-//     font-size: 20px;
-//     &:hover {
-//       background-color: $jsdc-b;
-//       box-shadow: inset 0 0 0 0 $jsdc-b;
-//       text-decoration: none;
-//       color: white;
-//     }
-//   }
-//   #sponsor-line{
-//     position: absolute;
-//     top: 58%;
-//     left: 0;
-//     &:after {
-//       background: $jsdc-b;
-//       content: '';
-//       display: inline-block;
-//       height: 1px;
-//       width: 100vw;
-//     }
-//   }
-// }
-
 /* Agenda */
 #agenda {
   // background-color: $jsdc2019-background;
@@ -592,7 +461,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  padding: 100px  0;
+  padding: 100px 0;
 
   & ~ .swal2-container {
     img {
@@ -617,19 +486,19 @@ body {
 
 #venue {
   position: relative;
-  padding: 100px 0;  
+  padding: 100px 0;
   color: $jsdc2019-white;
   text-align: left;
 }
 
 #speaker {
   position: relative;
-  padding: 100px  0; 
+  padding: 100px 0;
 }
 
 #team {
   position: relative;
-  padding: 100px  0; 
+  padding: 100px 0;
 
   .team-box {
     display: flex;
@@ -639,34 +508,33 @@ body {
   }
 
   .team-wrapper {
-      width: 15%;
-      padding: 25px 25px 0 25px;
+    width: 15%;
+    padding: 25px 25px 0 25px;
   }
 
-
   .team-img-box {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      border-radius: 50%
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
   }
 
   .team-text-box {
-      width: 100%;
-      padding: 20px 0;
-      text-align: center;
-      color: white;
-      letter-spacing: 1px
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
   }
 
   p {
-      margin: 0 0 10px;
+    margin: 0 0 10px;
   }
 }
 
 #sponsors {
   position: relative;
-  padding: 100px  0; 
+  padding: 100px 0;
 
   & > .row {
     .sponsor-content-area:not(:first-child) {
@@ -725,23 +593,26 @@ body {
     background-color: transparent;
   }
 }
-.fb-share-button{
-  width:100%;
+.fb-share-button {
+  width: 100%;
 }
 #google_translate_element {
+  position: absolute;
+  right: 10px;
   .goog-te-gadget-simple {
-    // border: 0;
+    border: 0 !important;
     background-color: #222;
-    // padding: 2px 7px;
-    // border-radius: 15px;
-    // color: white;
-    img{
-      opacity:0;
+    padding-top: 13px;
+    padding-left: 25px;
+
+    img {
+      opacity: 0;
+      display: none;
     }
     a,
     span {
-      color: #000;
-      font-weight: bold;
+      color: $jsdc2019-white !important;
+      border: none !important;
       &:hover {
         text-decoration: none;
       }
@@ -749,15 +620,14 @@ body {
   }
 }
 
-
 @media (max-width: 1480px) and (min-width: 1024px) {
   #team {
     .team-box {
-        margin: 20px 5%
+      margin: 20px 5%;
     }
 
     .team-wrapper {
-        width: 20%;
+      width: 20%;
     }
   }
 }
@@ -765,11 +635,11 @@ body {
 @media (max-width: 1024px) and (min-width: 768px) {
   #team {
     .team-box {
-        margin: 20px 5%
+      margin: 20px 5%;
     }
 
     .team-wrapper {
-        width: 20%;
+      width: 20%;
     }
   }
 }
@@ -777,11 +647,11 @@ body {
 @media (max-width: 767px) {
   #team {
     .team-box {
-        margin: 20px 5%
+      margin: 20px 5%;
     }
 
     .team-wrapper {
-        width: 50%;
+      width: 50%;
     }
   }
 }
