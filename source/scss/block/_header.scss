@@ -4,6 +4,7 @@
   height: 100%;
   padding: 150px 0;
   background: $jsdc2019-background;
+  margin-bottom:200px;
   .container {
     .title {
       .logo-hidden {
@@ -67,7 +68,6 @@
           display: block;
         }
         .sub-title {
-          // font-weight: bold;
           color: #ffc825;
 
         }
@@ -75,9 +75,7 @@
         
           span{
             height: 1px;
-            // background-color: $jsdc2019-white;
             margin:15px;
-            // text-align:center;
           }
         }
       }
