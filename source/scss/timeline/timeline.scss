@@ -23,6 +23,10 @@ body .jsdc-background {
   background-color: #f2f2f2;
 }
 #agenda {
+  .agenda-topic{
+    padding: 23px 0 0 0;
+
+  }
   .date {
     text-align: center;
     & > label {
