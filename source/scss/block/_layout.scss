@@ -473,13 +473,23 @@ body {
     .agenda-outline {
       max-height: 150px;
       overflow-y: auto;
-      border: 1px dashed gray;
+      // border: 1px solid #727272;
       text-align: left;
-      padding: 7px 10px;
+      padding: 10px 40px;
+      line-height:160%;
+    }
+    .agenda-title{
+      color:#0099B4;
     }
     .swal2-close {
       width: auto;
       outline: none;
+    }
+    .swal2-modal .swal2-close{
+      box-shadow:none;
+      &:hover{
+        color:#ffc800;
+      }
     }
   }
 }
