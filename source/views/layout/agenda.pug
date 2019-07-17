@@ -54,7 +54,6 @@ block content
                             .col-md-12(style="cursor:pointer;" onclick="agendaDetail('"+index+"',"+agendaIndex+","+contentIndex+")")
                               if (content.speaker)
                                 - var info = speakers[content.speaker];
-                                .col-md-12
                                   h3 #{info.name}
                                   .tag-groups
                                     if (languages[info.agenda.lang])
