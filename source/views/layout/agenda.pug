@@ -52,31 +52,31 @@ block content
                               span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
                           else
                             .col-md-12(style="cursor:pointer;" onclick="agendaDetail('"+index+"',"+agendaIndex+","+contentIndex+")")
-                            if (content.speaker)
-                              - var info = speakers[content.speaker];
-                              .col-md-12
-                                h3 #{info.name}
-                                .tag-groups
-                                  if (languages[info.agenda.lang])
-                                    span.label.event-lang #{languages[info.agenda.lang]}
-                                  if (info.agenda.slide)
-                                    a.label.label-info(target="_blank" href=info.agenda.slide) Slide
-                                  if (info.agenda.youtube)
-                                    a.label.label-danger(target="_blank" href=info.agenda.youtube) Youtube
-                                  each value in info.agenda.levels
-                                    span.event-level(data-level=agendaLevel[value] class=value)
+                              if (content.speaker)
+                                - var info = speakers[content.speaker];
+                                .col-md-12
+                                  h3 #{info.name}
+                                  .tag-groups
+                                    if (languages[info.agenda.lang])
+                                      span.label.event-lang #{languages[info.agenda.lang]}
+                                    if (info.agenda.slide)
+                                      a.label.label-info(target="_blank" href=info.agenda.slide) Slide
+                                    if (info.agenda.youtube)
+                                      a.label.label-danger(target="_blank" href=info.agenda.youtube) Youtube
+                                    each value in info.agenda.levels
+                                      span.event-level(data-level=agendaLevel[value] class=value)
 
-                                  h4.agenda-topic
-                                    | #{info.agenda.title}
-                                    if (info.agenda.title2)
-                                      br
-                                      | #{info.agenda.title2}
-                            else if (content.name)
-                              h3 #{content.name}
-                            else
-                              h3(style="border-bottom:none;") TBD
-                              h4
-                                | ---
+                                    h4.agenda-topic
+                                      | #{info.agenda.title}
+                                      if (info.agenda.title2)
+                                        br
+                                        | #{info.agenda.title2}
+                              else if (content.name)
+                                h3 #{content.name}
+                              else
+                                h3(style="border-bottom:none;") TBD
+                                h4
+                                  | ---
 
   script.
     var agendaData = !{JSON.stringify(agenda)};
