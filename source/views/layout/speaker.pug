@@ -3,92 +3,105 @@ extends ../partials/_layout
 block content
   section#speaker
     .container
-      div(style='text-align: center;')
-          h3.title-date 9/28
-          h3.title-date JavaScript 新技術的入門與導入
-          h2.title 講者
-          span.border
-      div.large-wrapper
-          each val, index in speakers
-              .wrapper
-                .main-box
-                  .img-box
-                    img.img-responsive(src='./images/speakers/'+val.image, alt='')
-                  .text-box.text-center
-                    h5.nopadding.title #{val.name}
-                    p.subtext #{val.company}
-                    ul.sc-icons
-                      //- li
-                      //-   a(href='#')
-                      //-     i.fa.fa-twitter
-                      if val.links.github
-                        li
-                          a(href=val.links.github)
-                            i.fa.fa-github
-                      if val.links.facebook
-                        li
-                          a(href=val.links.facebook)
-                            i.fa.fa-facebook
-                      //- li
-                      //-   a(href=val.links.facebook)
-                      //-     i.fa.fa-google-plus
-                      //- li
-                      //-   a(href='#')
-                      //-     i.fa.fa-linkedin
-                  if val.description
-                    .text-information
-                        .intro-text.text-center
-                          p #{val.description}
-          h3.wrapper
-            .main-box
-              .text-box.text-center.invite 持續邀請中
-
       .row
-        .col-md-12
-          <hr>
-      div(style='text-align: center;')
-          h3.title-date 10/26
-          h3.title-date JavaScript 穩定之後，然後呢？
-          h2.title 講者
-          span.border
-      div.large-wrapper
-          each val, index in mainSpeakers
-              .wrapper
-                .main-box
-                  .img-box
-                    img.img-responsive(src='./images/speakers/'+val.image, alt='')
-                  .text-box.text-center
-                    h5.nopadding.title #{val.name}
-                    p.subtext #{val.company}
-                    ul.sc-icons
-                      if val.links.twitter
-                        li
-                          a(href=val.links.twitter)
-                            i.fa.fa-twitter
-                      if val.links.github
-                        li
-                          a(href=val.links.github)
-                            i.fa.fa-github
-                      if val.links.facebook
-                        li
-                          a(href=val.links.facebook)
-                            i.fa.fa-facebook
-                      //- li
-                      //-   a(href=val.links.facebook)
-                      //-     i.fa.fa-google-plus
-                      //- li
-                      //-   a(href='#')
-                      //-     i.fa.fa-linkedin
-                  if val.description
-                    .text-information
-                        .intro-text.text-center
-                          p #{val.description} 
-          h3.wrapper
-            .main-box
-              .text-box.text-center.invite 持續邀請中     
+        .col-md-12.date
+          - var day = 0;
+          each rooms, index in agenda
+            - day = day + 1;
+            if (day == 1)
+              input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day) checked)
+            else
+              input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day))
+            label(for='day-'+day) #{index}
+
+          -  day = 0;
+          each rooms, index in agenda
+            - day = day + 1;
+            if (day == 1)
+              div.title-main(style='text-align: center;' class=('day-'+day))
+                h3.title-date 9/28
+                h3.title-date JavaScript 新技術的入門與導入
+                h2.title 講者
+                span.border
+              div.large-wrapper(class=('day-'+day))
+                  each val, index in speakers
+                      .wrapper
+                        .main-box
+                          .img-box
+                            img.img-responsive(src='./images/speakers/'+val.image, alt='')
+                          .text-box.text-center
+                            h5.nopadding.title #{val.name}
+                            p.subtext #{val.company}
+                            ul.sc-icons
+                              //- li
+                              //-   a(href='#')
+                              //-     i.fa.fa-twitter
+                              if val.links.github
+                                li
+                                  a(href=val.links.github)
+                                    i.fa.fa-github
+                              if val.links.facebook
+                                li
+                                  a(href=val.links.facebook)
+                                    i.fa.fa-facebook
+                              //- li
+                              //-   a(href=val.links.facebook)
+                              //-     i.fa.fa-google-plus
+                              //- li
+                              //-   a(href='#')
+                              //-     i.fa.fa-linkedin
+                          if val.description
+                            .text-information
+                                .intro-text.text-center
+                                  p #{val.description}
+                  h3.wrapper
+                    .main-box
+                      .text-box.text-center.invite 持續邀請中
+            else 
+              div.title-main(style='text-align: center;' class=('day-'+day))
+                h3.title-date 10/26
+                h3.title-date JavaScript 穩定之後，然後呢？
+                h2.title 講者
+                span.border
+              div.large-wrapper(class=('day-'+day))
+                  each val, index in mainSpeakers
+                      .wrapper
+                        .main-box
+                          .img-box
+                            img.img-responsive(src='./images/speakers/'+val.image, alt='')
+                          .text-box.text-center
+                            h5.nopadding.title #{val.name}
+                            p.subtext #{val.company}
+                            ul.sc-icons
+                              if val.links.twitter
+                                li
+                                  a(href=val.links.twitter)
+                                    i.fa.fa-twitter
+                              if val.links.github
+                                li
+                                  a(href=val.links.github)
+                                    i.fa.fa-github
+                              if val.links.facebook
+                                li
+                                  a(href=val.links.facebook)
+                                    i.fa.fa-facebook
+                              //- li
+                              //-   a(href=val.links.facebook)
+                              //-     i.fa.fa-google-plus
+                              //- li
+                              //-   a(href='#')
+                              //-     i.fa.fa-linkedin
+                          if val.description
+                            .text-information
+                                .intro-text.text-center
+                                  p #{val.description} 
+                  h3.wrapper
+                    .main-box
+                      .text-box.text-center.invite 持續邀請中     
    
 
 block js
+  link(rel='stylesheet', href='./css/timeline/timeline.css')
   script(src='./js/masonry.pkgd.min.js')
   script.
     setTimeout(function(){

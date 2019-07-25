@@ -107,6 +107,27 @@ $screen-md: 992px;
         height: 80px;
       }
     }
+    .date {
+
+      & > label {
+        font-size: 20px;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+
+        &:last-of-type {
+          border-radius: 0;
+        }
+      }
+
+      .day-1,
+      .day-2 {
+        h2 {
+          margin-top: 20px;
+          margin-bottom: -30px;
+        }
+      }
+    }
   }
   #venue {
     h3 {
