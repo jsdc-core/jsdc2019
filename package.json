@@ -26,14 +26,22 @@
     "javascript"
   ],
   "contributors": [
+  
     {
-      "name": "Webber Wu",
-      "url": "https://github.com/webber0928"
+      "name": "Maureen",
+      "url": "https://github.com/maureensayshi"
     },
     {
-      "name": "Ivan Wei",
-      "email": "scorpionseed@gmail.com",
-      "url": "https://blog.ivanwei.co"
+      "name": "Nozomi",
+      "url": "https://github.com/TingWeiHsu"
+    },
+    {
+      "name": "ALi Li",
+      "url": "https://github.com/esbb48"
+    },
+    {
+      "name": "Ashu",
+      "url": "https://github.com/yf-ashu"
     }
   ],
   "license": "MIT",
