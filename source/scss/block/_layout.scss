@@ -501,28 +501,19 @@ body {
   color: $jsdc2019-white;
   text-align: left;
 }
+
 #conduct {
   position: relative;
   padding: 100px 0;
   color: $jsdc2019-white;
   text-align: left;
-.content{
-
-  width:80%;
-  margin:0 auto;
-  .main{
-    margin:20px auto;
-
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    .main {
+      margin: 20px auto;
+    }
   }
- }
-
-
-
-
-
-
-
-
 }
 
 #speaker {
@@ -580,29 +571,28 @@ body {
         display: none;
       }
     }
-      input[value='day-1']:checked {
-        & + label {
-          background-color: #ffc800;
-        }
-        & ~ .day-1.title-main  {
-          display: block;
-        }
-        & ~ .day-2.title-main  {
-          display: none;
-        }
+    input[value='day-1']:checked {
+      & + label {
+        background-color: #ffc800;
       }
-      input[value='day-2']:checked {
-        & + label {
-          background-color: #ffc800;
-        }
-        & ~ .day-2.title-main  {
-          display: block;
-        }
-        & ~ .day-1.title-main  {
-          display: none;
-        }
+      & ~ .day-1.title-main {
+        display: block;
       }
-    
+      & ~ .day-2.title-main {
+        display: none;
+      }
+    }
+    input[value='day-2']:checked {
+      & + label {
+        background-color: #ffc800;
+      }
+      & ~ .day-2.title-main {
+        display: block;
+      }
+      & ~ .day-1.title-main {
+        display: none;
+      }
+    }
   }
 }
 
