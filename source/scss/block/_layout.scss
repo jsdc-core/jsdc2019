@@ -575,10 +575,10 @@ body {
       & + label {
         background-color: #ffc800;
       }
-      & ~ .day-1.title-main {
+      & ~ .day-1.title-main  {
         display: block;
       }
-      & ~ .day-2.title-main {
+      & ~ .day-2.title-main  {
         display: none;
       }
     }
@@ -586,10 +586,10 @@ body {
       & + label {
         background-color: #ffc800;
       }
-      & ~ .day-2.title-main {
+      & ~ .day-2.title-main  {
         display: block;
       }
-      & ~ .day-1.title-main {
+      & ~ .day-1.title-main  {
         display: none;
       }
     }

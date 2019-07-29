@@ -22,7 +22,7 @@ $screen-md: 992px;
           }
         }
         .jsdc-full-name {
-        
+
           span {
             font-size: 1.4rem;
             line-height: 180%;
@@ -179,7 +179,7 @@ $screen-md: 992px;
 /* Medium devices (tables, 768px and up) */
 @media (max-width: $screen-sm) {
   #google_translate_element {
-    position: relative !important;  
+    position: relative !important;
   }
   #header {
     .container {
@@ -286,7 +286,7 @@ $screen-md: 992px;
 
   /* Speaker */
   #speaker {
-    padding: 80px 0 0;
+    padding: 100px 0 0;
 
     .typeform-button {
       margin: 0 20px;
@@ -450,7 +450,7 @@ $screen-md: 992px;
 
   /* Speaker */
   #speaker {
-    padding: 100px 0 0;
+    padding: 100px 15px 0;
 
     #speaker-line {
       &:after {

@@ -2,7 +2,10 @@ extends ../partials/_layout
 
 block content
   section#speaker
-    .container
+    nav.navbar-mobile
+      a.back-top(href='#speaker')
+        i.fa.fa-arrow-up
+    .container(style="padding-top:20px; background-color: #222")
       .row
         .col-md-12.date
           - var day = 0;
@@ -57,7 +60,7 @@ block content
                   h3.wrapper
                     .main-box
                       .text-box.text-center.invite 持續邀請中
-            else 
+            else
               div.title-main(style='text-align: center;' class=('day-'+day))
                 h3.title-date 10/26
                 h3.title-date JavaScript 穩定之後，然後呢？
@@ -94,14 +97,13 @@ block content
                           if val.description
                             .text-information
                                 .intro-text.text-center
-                                  p #{val.description} 
+                                  p #{val.description}
                   h3.wrapper
                     .main-box
-                      .text-box.text-center.invite 持續邀請中     
-   
+                      .text-box.text-center.invite 持續邀請中
+
 
 block js
-  link(rel='stylesheet', href='./css/timeline/timeline.css')
   script(src='./js/masonry.pkgd.min.js')
   script.
     setTimeout(function(){
@@ -112,7 +114,3 @@ block js
       //-   itemSelector: '.box'
       //- });
     }, 0);
-
-block css
-  style(type='text/css').
-    - body
