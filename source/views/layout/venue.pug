@@ -5,14 +5,14 @@ block content
     .container(style="padding-top:20px; background-color: #222")
       .row
         .col-md-12.date
-          //- - var day = 0;
-          //- each rooms, index in agenda
-          //-   - day = day + 1;
-          //-   if (day == 1)
-          //-     input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day) checked)
-          //-   else
-          //-     input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day))
-          //-   label(for='day-'+day) #{index}
+          - var day = 0;
+          each rooms, index in agenda
+            - day = day + 1;
+            if (day == 1)
+              input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day) checked)
+            else
+              input(type='radio' name='agenda-toggle' id=('day-'+day) value=('day-'+day))
+            label(for='day-'+day) #{index}
 
           -  day = 0;
           each rooms, index in agenda
