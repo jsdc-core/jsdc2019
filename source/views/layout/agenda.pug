@@ -25,12 +25,17 @@ block content
                 each roomContents, roomIndex in room
                   if (day == 1)
                     .col-md-12
-                      h2 #{roomContents}
-                  else 
+                      h3.title-date 10/26
+                      h3.title-date JavaScript 穩定之後，然後呢？
                     .col-md-6
                       h2 #{roomContents}
-                  
-
+                  else 
+                    .col-md-12
+                      h3.title-date 9/28
+                      h3.title-date JavaScript 新技術的入門與導入
+                    .col-md-12
+                      h2 #{roomContents}
+         
             - day = 0;
             each rooms, index in agenda
               - day = day + 1;
@@ -49,7 +54,7 @@ block content
                         else
                           if Object.keys(agendaContents.list).length===2
                             .col-md-6(style="cursor:pointer;" onclick="agendaDetail('"+index+"',"+agendaIndex+","+contentIndex+")")
-                              span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
+                              //- span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
                               if (content.speaker)
                                 - var info = speakers[content.speaker];
                                   h3 #{info.name}

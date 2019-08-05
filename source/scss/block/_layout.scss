@@ -500,6 +500,81 @@ body {
   padding: 100px 0;
   color: $jsdc2019-white;
   text-align: left;
+  .date {
+    text-align: center;
+    & > label {
+      font-size: 24px;
+      padding: 10px 35px;
+      color: $jsdc2019-white;
+      font-weight: bold;
+      width: 50%;
+      background-color: #eaeaea;
+      border-radius: 5px 0 0 5px;
+      color: black;
+      &:hover {
+        background-color: rgb(255, 221, 96);
+      }
+
+      &:last-of-type {
+        background-color: #eaeaea;
+        border-radius: 0 5px 5px 0;
+        color: black;
+
+        &:hover {
+          background-color: rgb(255, 221, 96);
+        }
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+
+    input[value='day-1']:checked {
+      & + label {
+        background-color: #ffc800;
+      }
+      & ~ .day-1 {
+        display: flex;
+      }
+      & ~ .day-2 {
+        display: none;
+      }
+    }
+    input[value='day-2']:checked {
+      & + label {
+        background-color: #ffc800;
+      }
+      & ~ .day-2 {
+        display: flex;
+      }
+      & ~ .day-1 {
+        display: none;
+      }
+    }
+    input[value='day-1']:checked {
+      & + label {
+        background-color: #ffc800;
+      }
+      & ~ .day-1.title-main  {
+        display: block;
+      }
+      & ~ .day-2.title-main  {
+        display: none;
+      }
+    }
+    input[value='day-2']:checked {
+      & + label {
+        background-color: #ffc800;
+      }
+      & ~ .day-2.title-main  {
+        display: block;
+      }
+      & ~ .day-1.title-main  {
+        display: none;
+      }
+    }
+  }
 }
 
 #conduct {
