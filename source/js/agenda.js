@@ -7,6 +7,14 @@
       showConfirmButton: false
       // confirmButtonText: '關閉'
     }
+if(currentAgendaContent.people>1){
+  swalOptions = {
+    imageWidth: 100*currentAgendaContent.people,
+    showCloseButton: true,
+    showConfirmButton: false
+    // confirmButtonText: '關閉'
+  }
+}
 
     if (currentAgendaContent.speaker) {
       var currentSpeakerData = speakerData[currentAgendaContent.speaker];
@@ -15,6 +23,7 @@
 
       swalOptions.title = currentSpeakerData.name;
       swalOptions.imageUrl = './images/speakers/' + currentSpeakerData.image;
+
       swalOptions.html = '<h4 class="agenda-title">'+currntAgendaData.title+'</h4>';
       if (currntAgendaData.outline)
         swalOptions.html += '<div class="agenda-outline">' +
