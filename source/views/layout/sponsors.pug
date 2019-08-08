@@ -2,24 +2,35 @@ extends ../partials/_layout
 
 block content
   section#sponsors
-    .container
-      div(style='text-align: center;')
-          h2.title Sponsors
-          span.border
-      div.large-wrapper
-          each val, index in sponsors.gold
-              .wrapper
-                .main-box
-                  .img-box
-                    .overlay
-                      p.intro-text.text-center !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
-                      a(href=val.link)
-                        span.visit
-                          span Visit
-                    img.img-responsive(src=val.logo, alt='')
-                  .text-box.text-center
-                    h5.nopadding.title #{val.company}
-                    p.subtext #{val.en_company}
+    div.container
+        each level, key in tranformName
+            div(style='text-align: center;')
+                h2.title #{level.name}
+                span.border
+            div.large-wrapper
+              each val, id in sponsors[key]
+                a(style="text-decoration:none;" href=val.link target="_blank")
+                  .wrapper
+                    .main-box
+                      .img-box(style="display: flex; justify-content: center")
+                        if key === 'titanium'
+                          div(style="width: 260px;height: 160px")
+                            img.img-responsive(src=val.logo, alt='')
+                        else if key === 'platinum'
+                          div(style="width: 200px;height: 116px")
+                            img.img-responsive(src=val.logo, alt='')
+                      .text-box.text-center
+                        h5.nopadding.title #{val.company}
+                        p.subtext #{val.en_company}
+                        ul.sc-icons
+                          if val.link
+                            li
+                              a(href=val.link)
+                                i.fa.fa-link
+                      if val.description
+                        .text-information
+                          .intro-text.text-center
+                            p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
 
 block js
   script.
