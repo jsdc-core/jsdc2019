@@ -58,6 +58,10 @@ block content
                             .text-information
                                 .intro-text.text-center
                                   p #{val.description}
+                          if val.abouts
+                            .text-information
+                                .intro-text.text-center
+                                  a(href=val.abouts.link) #{val.abouts.text}
                   h3.wrapper
                     .main-box
                       .text-box.text-center.invite 持續邀請中

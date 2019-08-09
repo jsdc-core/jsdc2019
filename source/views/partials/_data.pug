@@ -6,6 +6,31 @@
 
 
   var mainSpeakers = {
+    ashi: {
+      name: 'ashi',
+      isKeynote: false,
+      company: '',
+      description: '',
+      image: 'logo.jpg',
+      agenda: {
+        title: '',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline_E: '',
+        outline: ''
+      },
+      links: {
+        github: 'https://github.com/queerviolet',
+        twitter:'https://twitter.com/rakshesha'
+      },
+      abouts: {
+        link: 'https://ashi.io',
+        text:'About Me'
+      }
+    },
     Carlos: {
       name: 'Carlos Rufo',
       isKeynote: false,
@@ -68,7 +93,7 @@
       }
     },
     dexteryy: {
-      name: '楊揚',
+      name: 'dexteryy 楊揚',
       isKeynote: false,
       company: 'ByteDance（字節跳動）',
       description: '06年之前是中國最大D＆D / TRPG資料站「最深的地下城」的站長，美漫漢化組創始人和網設計師，此後一直是JS Hacker和Web App開發者（開發+設計+產品）。先後在土豆網，豆瓣，Flipboard，引人注目的負責JS基礎工程和創新產品，最喜歡的產品有2D虛擬世界社區「阿爾法城」，全球最快的EOS區塊鏈瀏覽器eosx.io。一直努力推動JS技術和Web開發技術的演進，為此做過OzJS，DarkDOM / CardKit，WebCube，“現代Web開發咒語大全”等開源項目，目前在字節跳動負責Web Dev Engine方向，打造下一代框架和工具產品。',
@@ -586,7 +611,7 @@
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: 'RxJS is pretty complicated at the beginning. I used to be there as well. But I noticed, that exercising with RxJS helps a lot in understanding the concept of reactive programming. Trying is the best way to get used to it! To support you on this way, this talk will demonstrate developing a component reactively from scratch. With the power of RxJS we will improve the maintainability and resilience of our components.'
+        outline: 'RxJS is pretty complicated at the beginning. <br> I used to be there as well. But I noticed, that exercising with RxJS helps a lot in understanding the concept of reactive programming. <br> Trying is the best way to get used to it! <br> To support you on this way, this talk will demonstrate developing a component reactively from scratch.<br>  With the power of RxJS we will improve the maintainability and resilience of our components.'
       },
       links: {
         github: 'https://github.com/JWO719',
@@ -600,14 +625,14 @@
       description: '曾在騰訊，阿里巴巴，360入職。專注於大型前端軟件和視頻播放領域。',
       image: 'johann.jpg',
       agenda: {
-        title: '',
+        title: '前端項目上 Web Worker 實踐',
         levels: [],
         lang: 'CH',
         type: '',
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: ''
+        outline: '該分享主要解答以下幾個問題：<br> 1.什麼情況下適合在前端項目中引入Web Worker？ <br> 2.引入Web Worker後我們要注意什麼？如何改動我們的代碼？ <br> 3.在落地Web Worker的時候我們會遇到什麼問題，如何預防及解決？'
       },
       links: {
         github: 'https://github.com/toxic-johann',
@@ -628,7 +653,7 @@
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: 'The rise of modern JS frameworks brought in more efficient concept of Front End programming. These inspired new approaches, such as CSS Module and CSS-in-JS, more scoped in working with CSS. It’s always a debate which is the best practice among these approaches. Some claimed CSS-in-JS eliminates developer’s most fear when dealing with CSS (the CSS file) with more dynamic approach. Some disagreed. If you are keen to know about CSS-in-JS and what should be considered when it comes to work with CSS, this talk is for you.'
+        outline: 'The rise of modern JS frameworks brought in more efficient concept of Front End programming. <br> These inspired new approaches, such as CSS Module and CSS-in-JS, more scoped in working with CSS. <br> It’s always a debate which is the best practice among these approaches.<br>  Some claimed CSS-in-JS eliminates developer’s most fear when dealing with CSS (the CSS file) with more dynamic approach. Some disagreed. <br> If you are keen to know about CSS-in-JS and what should be considered when it comes to work with CSS, this talk is for you.'
       },
       links: {
         github: 'https://github.com/mayashavin',
@@ -642,14 +667,14 @@
       description: "Vladimir Mutafov is a software engineer on the NativeScript team at Progress Software. He's working on the NativeScript Android Runtime which provides all the high-performant JS to Java communication support.",
       image: 'vladimir.jpg',
       agenda: {
-        title: '',
+        title: 'Embedding V8 in NativeScript ',
         levels: [],
         lang: 'EN',
         type: '',
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: ''
+        outline: 'V8 is the JavaScript engine powering Google Chrome, Node.js, and NativeScript.<br>  NativeScript embeds V8 to process JavaScript and dynamically call Android APIs.<br>  This enables developers to write Android applications in JavaScript and directly access the underlying OS.<br>  Come to this session to learn what challenges the NativeScript team met embedding V8 in a mobile framework and how they were solved.'
       },
       links: {
         github: 'https://github.com/vmutafov',
@@ -691,7 +716,7 @@
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: '啟動一個Node.js進程，通常我們可以直接通過Node.js ChildProcess API啟動;如果希望將這個進程的運行環境隔離，我們可以通過cgroups控制進程資源，或者更進一步，可以通過容器服務來創建隔離沙箱。而在需要頻繁啟動Javascript / Node.js運行時，100ms以上的進程/容器冷啟動速度可能並不會讓人滿意：如果我們希望每個運行時有毫秒級的啟動速度，各個運行環境之間又有較好的隔離，我們可以選擇哪種方案，或者新方案？'
+        outline: '啟動一個Node.js進程，通常我們可以直接通過Node.js ChildProcess API啟動;如果希望將這個進程的運行環境隔離，我們可以通過cgroups控制進程資源，或者更進一步，可以通過容器服務來創建隔離沙箱。<br> 而在需要頻繁啟動Javascript / Node.js運行時，100ms以上的進程/容器冷啟動速度可能並不會讓人滿意：如果我們希望每個運行時有毫秒級的啟動速度，各個運行環境之間又有較好的隔離，我們可以選擇哪種方案，或者新方案？'
       },
       links: {
         github: 'https://github.com/legendecas',
@@ -772,7 +797,7 @@
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: "As a marketplace app, transaction page is a must-have page along the user journey. It involves heavy business logic and affects the company's Gross Merchandise Volumes. I'm gonna demonstrate some possible challenges and approaches we've applied while re-architecturing this critical page."
+        outline: "As a marketplace app, transaction page is a must-have page along the user journey.<br>  It involves heavy business logic and affects the company's Gross Merchandise Volumes.<br>  I'm gonna demonstrate some possible challenges and approaches we've applied while re-architecturing this critical page."
       },
       links: {
         github: 'https://github.com/pptang',
@@ -793,11 +818,36 @@
         youtube: '',
         slide: '',
         outline_E: '',
-        outline: 'LINE 的組織龐大，旗下有相當多的產品，因此在實作前端元件時，是否能夠重複使用是很重要的考量因素。這次嘗試使用後起之秀 - Custom Elements，好處是現代瀏覽器原生支援，因此可以相容絕大部分的前端函式庫。議程的第一段會先介紹開發 Custom Elements 的經驗談。第二段則會探討 Vue.js 中仍存在的共用作法 - Mixins：為何 React 提出 HOC(Higher Order Component) 來取代 Mixin api，及最後發展出 Render props 的技巧。'
+        outline: 'LINE 的組織龐大，旗下有相當多的產品，因此在實作前端元件時，是否能夠重複使用是很重要的考量因素。<br>  這次嘗試使用後起之秀 - Custom Elements，好處是現代瀏覽器原生支援，因此可以相容絕大部分的前端函式庫。 <br> 議程的第一段會先介紹開發 Custom Elements 的經驗談。第二段則會探討 Vue.js 中仍存在的共用作法 - Mixins：為何 React 提出 HOC (Higher Order Component) 來取代 Mixin api，及最後發展出 Render props 的技巧。'
       },
       links: {
         github: 'https://github.com/pptang',
         twitter:'https://twitter.com/pptang17'
+      }
+    },
+    ashi: {
+      name: 'ashi',
+      isKeynote: false,
+      company: '',
+      description: '',
+      image: 'logo.jpg',
+      agenda: {
+        title: 'Deep Learning in JS',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline_E: '',
+        outline: "It's clear by now that the robots are coming for us. <br/> <br/>Breakthroughs in AI fill our streams and news feeds, themselves the products of machine learning, the echoing algorithmic screams of a new kind of mind being born.  <br/> <br/> Using deeplearn.js, we'll find out how deep learning systems learn and examine how they think. The fundamental building blocks of AI have never been more accessible. Let's explore the architecture of these new minds, which are growing to mediate our every interaction."
+      },
+      links: {
+        github: 'https://github.com/queerviolet',
+        twitter:'https://twitter.com/rakshesha'
+      },
+      abouts: {
+        link: 'ashi.io',
+        text:'About Me'
       }
     },
   };
@@ -836,20 +886,22 @@
         all: {name: '休息換場', speaker: '',people:1},
       }},
       {time: '11:20 - 12:00', list: {
-        101: {name: 'RxJS - Practice makes Perfect', speaker: 'Jan',people:1},
+        101: {name: '前端項目上 Web Worker 實踐', speaker: 'Johann',people:1},
         102: {name: 'Re-Architecture Transaction Page and Sleep Well', speaker: 'Paipo',people:1},
       }},
       {time: '12:00 - 13:00', list: {
         all: {name: '午餐', speaker: '',people:1},
       }},
       {time: '13:00 - 13:40', list: {
-        101: {name: '如何共用元件 - 從開發LINE隨你填貼圖來談', speaker: 'Line',people:2},
+        101: {name: 'RxJS - Practice makes Perfect', speaker: 'Jan',people:1},
+        102: {name: 'Embedding V8 in NativeScript', speaker: 'Vladimir',people:1},
       }},
       {time: '13:40 - 13:50', list: {
         all: {name: '休息換場', speaker: '',people:1},
       }},
       {time: '13:50 - 14:30', list: {
-        all: {name: 'TBD', speaker: '',people:1},
+        101: {name: '如何共用元件 - 從開發LINE隨你填貼圖來談', speaker: 'Line',people:2},
+        102: {name: 'Deep Learning in JS', speaker: 'ashi',people:1},
       }},
       {time: '14:30 - 14:40', list: {
         all: {name: '休息換場', speaker: '',people:1},
