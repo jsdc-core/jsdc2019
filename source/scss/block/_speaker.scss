@@ -70,6 +70,8 @@
 
 .main-box .img-box img {
   transition: all 0.3s ease-out 0s;
+  width: 100%;
+  height:auto;
 }
 
 img {
@@ -83,8 +85,13 @@ img {
   position: relative;
   width: 100%;
   overflow: hidden;
-}
 
+}
+.inner_img-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 .img-box .overlay {
   position: absolute;
   width: 100%;

@@ -14,10 +14,13 @@ block content
                     .main-box
                       .img-box(style="display: flex; justify-content: center")
                         if key === 'titanium'
-                          div(style="width: 260px;height: 160px")
+                          div.inner_img-box(style="width: 260px;height: 160px")
                             img.img-responsive(src=val.logo, alt='')
                         else if key === 'platinum'
-                          div(style="width: 200px;height: 116px")
+                          div.inner_img-box(style="width: 200px;height: 116px")
+                            img.img-responsive(src=val.logo, alt='')
+                        else if key === 'special'
+                          div.inner_img-box(style="width: 130px;height: 60px")
                             img.img-responsive(src=val.logo, alt='')
                       .text-box.text-center
                         h5.nopadding.title #{val.company}
