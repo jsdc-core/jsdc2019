@@ -9,31 +9,33 @@ block content
                 span.border
             div.large-wrapper
               each val, id in sponsors[key]
-                a(style="text-decoration:none;" href=val.link target="_blank")
-                  .wrapper
+                .wrapper
                     .main-box
-                      .img-box(style="display: flex; justify-content: center")
-                        if key === 'titanium'
-                          div.inner_img-box(style="width: 260px;height: 160px")
-                            img.img-responsive(src=val.logo, alt='')
-                        else if key === 'platinum'
-                          div.inner_img-box(style="width: 200px;height: 116px")
-                            img.img-responsive(src=val.logo, alt='')
-                        else if key === 'special'
-                          div.inner_img-box(style="width: 130px;height: 60px")
-                            img.img-responsive(src=val.logo, alt='')
-                      .text-box.text-center
-                        h5.nopadding.title #{val.company}
-                        p.subtext #{val.en_company}
-                        ul.sc-icons
-                          if val.link
-                            li
-                              a(href=val.link)
-                                i.fa.fa-link
+                      a(style="text-decoration:none;" href=val.link target="_blank")
+                        .img-box(style="display: flex; justify-content: center")
+                          if key === 'titanium'
+                            div.inner_img-box(style="width: 260px;height: 160px; margin:0 20px;")
+                              img.img-responsive(src=val.logo, alt='')
+                          else if key === 'platinum'
+                            div.inner_img-box(style="width: 200px;height: 116px")
+                              img.img-responsive(src=val.logo, alt='')
+                          else if key === 'special'
+                            div.inner_img-box(style="width: 130px;height: 60px")
+                              img.img-responsive(src=val.logo, alt='')
                       if val.description
-                        .text-information
-                          .intro-text.text-center
-                            p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+                        if key === 'titanium'
+                          .text-information-large
+                            .intro-text.text-center(style="margin-top:12px;")
+                              p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+                        else if key === 'platinum'
+                          .text-information-middle
+                            .intro-text.text-center(style="margin-top:12px;")
+                              p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+                        else if key === 'special'
+                          .text-information
+                            .intro-text.text-center(style="margin-top:12px;")
+                              p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+
 
 block js
   script.

@@ -49,9 +49,9 @@
 
 .large-wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 10%;
+  margin: 20px 10% 50px 10%;
 }
 
 .wrapper {
@@ -71,7 +71,7 @@
 .main-box .img-box img {
   transition: all 0.3s ease-out 0s;
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 img {
@@ -85,12 +85,11 @@ img {
   position: relative;
   width: 100%;
   overflow: hidden;
-
 }
-.inner_img-box{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.inner_img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-box .overlay {
   position: absolute;
@@ -194,8 +193,7 @@ i {
   width: 100%;
   padding: 30px 0 20px 0;
   background-color: #eaeaea;
-  min-height:130px;
-  
+  min-height: 130px;
 }
 
 .text-box .title {
@@ -204,7 +202,7 @@ i {
 
 .text-information {
   height: 100px;
-  padding:0  20px;
+  padding: 0 20px;
   background-color: #eaeaea;
   overflow-y: auto;
 }
@@ -228,13 +226,12 @@ h5 {
 p {
   margin: 0 0 10px;
 }
-.invite{
-    color:black;
-  
+.invite {
+  color: black;
 }
-.info-desc{
-  display:block ;
-  font-size:1.5rem ;
+.info-desc {
+  display: block;
+  font-size: 1.5rem;
   padding: 12px;
 }
 @media (max-width: 1480px) and (min-width: 1024px) {
@@ -271,9 +268,7 @@ p {
     width: 100%;
   }
   .border {
-
     height: 0px;
-
   }
   .navbar-mobile {
     display: block;

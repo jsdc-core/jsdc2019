@@ -15,6 +15,22 @@ $jsdc2019-white: #e4e4e4;
   font-weight: 900;
   letter-spacing: 3px;
 }
+div::-webkit-scrollbar {
+  width: 8px; /* 1px wider than Lion. */
+  /* This is more usable for users trying to click it. */
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+}
+
+div::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #c2c2c2;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -495,7 +511,6 @@ body {
   }
 }
 
-
 #venue {
   position: relative;
   padding: 100px 0;
@@ -557,10 +572,10 @@ body {
       & + label {
         background-color: #ffc800;
       }
-      & ~ .day-1.title-main  {
+      & ~ .day-1.title-main {
         display: block;
       }
-      & ~ .day-2.title-main  {
+      & ~ .day-2.title-main {
         display: none;
       }
     }
@@ -568,10 +583,10 @@ body {
       & + label {
         background-color: #ffc800;
       }
-      & ~ .day-2.title-main  {
+      & ~ .day-2.title-main {
         display: block;
       }
-      & ~ .day-1.title-main  {
+      & ~ .day-1.title-main {
         display: none;
       }
     }
@@ -651,10 +666,10 @@ body {
       & + label {
         background-color: #ffc800;
       }
-      & ~ .day-1.title-main  {
+      & ~ .day-1.title-main {
         display: block;
       }
-      & ~ .day-2.title-main  {
+      & ~ .day-2.title-main {
         display: none;
       }
     }
@@ -662,10 +677,10 @@ body {
       & + label {
         background-color: #ffc800;
       }
-      & ~ .day-2.title-main  {
+      & ~ .day-2.title-main {
         display: block;
       }
-      & ~ .day-1.title-main  {
+      & ~ .day-1.title-main {
         display: none;
       }
     }
@@ -758,6 +773,42 @@ body {
     & > .company-logo {
       border-bottom: 0px;
     }
+  }
+  .text-information {
+    height: 100px;
+    padding: 0 20px;
+    color: $jsdc2019-white;
+    overflow-y: auto;
+    background-color: $jsdc2019-background;
+  }
+  .text-information-large {
+    height: 320px;
+    padding: 0 20px;
+    color: $jsdc2019-white;
+    overflow-y: auto;
+    background-color: $jsdc2019-background;
+  }
+  .text-information-middle {
+    height: 232px;
+    padding: 0 20px;
+    color: $jsdc2019-white;
+    overflow-y: auto;
+    background-color: $jsdc2019-background;
+  }
+  .img-box {
+    background-color: inherit;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main-box {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
 }
 
