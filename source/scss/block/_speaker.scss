@@ -59,6 +59,10 @@
   padding: 25px 15px 0 15px;
 }
 
+.wrapper-special {
+    width: 15%
+}
+
 .main-box {
   position: relative;
   width: 100%;
@@ -242,6 +246,10 @@ p {
   .wrapper {
     width: 33.3%;
   }
+
+  .wrapper-special {
+    width: 20%
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -251,6 +259,10 @@ p {
 
   .wrapper {
     width: 50%;
+  }
+
+  .wrapper-special {
+    width: 20%
   }
 }
 
@@ -267,6 +279,11 @@ p {
   .wrapper {
     width: 100%;
   }
+
+  .wrapper-special {
+    width: 100%
+  }
+
   .border {
     height: 0px;
   }

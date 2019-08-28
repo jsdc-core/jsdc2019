@@ -9,33 +9,41 @@ block content
                 span.border
             div.large-wrapper
               each val, id in sponsors[key]
-                .wrapper
-                    .main-box
-                      a(style="text-decoration:none;" href=val.link target="_blank")
-                        .img-box(style="display: flex; justify-content: center")
-                          if key === 'titanium'
-                            div.inner_img-box(style="width: 260px;height: 160px; margin:0 20px;")
-                              img.img-responsive(src=val.logo, alt='')
-                          else if key === 'platinum'
-                            div.inner_img-box(style="width: 200px;height: 116px")
-                              img.img-responsive(src=val.logo, alt='')
-                          else if key === 'special'
-                            div.inner_img-box(style="width: 130px;height: 60px")
-                              img.img-responsive(src=val.logo, alt='')
-                      if val.description
-                        if key === 'titanium'
-                          .text-information-large
-                            .intro-text.text-center(style="margin-top:12px;")
-                              p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
-                        else if key === 'platinum'
-                          .text-information-middle
-                            .intro-text.text-center(style="margin-top:12px;")
-                              p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
-                        else if key === 'special'
+                if key === 'special'
+                  .wrapper-special
+                      .main-box
+                        a(style="text-decoration:none;" href=val.link target="_blank")
+                          .img-box(style="display: flex; justify-content: center; align-items: center")
+                            if val.company === 'GraphQL HK'
+                              div.inner_img-box(style="width: 90px;height: 90px")
+                                img.img-responsive(src=val.logo, alt='')
+                            else
+                              div.inner_img-box(style="width: 130px;height: 90px")
+                                img.img-responsive(src=val.logo, alt='')
+                        if val.description
                           .text-information
-                            .intro-text.text-center(style="margin-top:12px;")
-                              p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
-
+                              .intro-text.text-center(style="margin-top:12px;")                                
+                                p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+                else 
+                  .wrapper
+                      .main-box
+                        a(style="text-decoration:none;" href=val.link target="_blank")
+                          .img-box(style="display: flex; justify-content: center")
+                            if key === 'titanium'
+                              div.inner_img-box(style="width: 260px;height: 160px; margin:0 20px;")
+                                img.img-responsive(src=val.logo, alt='')
+                            else if key === 'platinum'
+                              div.inner_img-box(style="width: 200px;height: 116px")
+                                img.img-responsive(src=val.logo, alt='')
+                        if val.description
+                          if key === 'titanium'
+                            .text-information-large
+                              .intro-text.text-center(style="margin-top:12px;")
+                                p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
+                          else if key === 'platinum'
+                            .text-information-middle
+                              .intro-text.text-center(style="margin-top:12px;")
+                                p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
 
 block js
   script.
