@@ -35,12 +35,15 @@ block content
                             else if key === 'platinum'
                               div.inner_img-box(style="width: 200px;height: 116px")
                                 img.img-responsive(src=val.logo, alt='')
+                            else if key === 'gold'
+                              div.inner_img-box(style="width: 160px;height: 84px")
+                                img.img-responsive(src=val.logo, alt='')
                         if val.description
                           if key === 'titanium'
                             .text-information-large
                               .intro-text.text-center(style="margin-top:12px;")
                                 p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
-                          else if key === 'platinum'
+                          else
                             .text-information-middle
                               .intro-text.text-center(style="margin-top:12px;")
                                 p !{val.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
