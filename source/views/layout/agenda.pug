@@ -27,8 +27,11 @@ block content
                     .col-md-12
                       h3.title-date 10/26
                       h3.title-date JavaScript 穩定之後，然後呢？
-                    .col-md-6
-                      h2 #{roomContents}
+                    .col-md-2
+                    .col-md-5.room-title
+                      h2 A
+                    .col-md-5.room-title
+                      h2 C
                   else 
                     .col-md-12
                       h3.title-date 9/28
@@ -54,7 +57,7 @@ block content
                         else
                           if Object.keys(agendaContents.list).length===2
                             .col-md-6
-                              //- span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
+                              span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
                               if (content.speaker)
                                 - var info = speakers[content.speaker];
                                   h3 #{info.name}

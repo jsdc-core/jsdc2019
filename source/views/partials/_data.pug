@@ -6,6 +6,27 @@
 
 
   var mainSpeakers = {
+    alex: {
+      name: 'Alexander Khovansky',
+      isKeynote: false,
+      company: '',
+      description: '',
+      image: 'alex.jpg',
+      agenda: {
+        title: 'Escaping the Web of Insecurities',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline_E: '',
+        outline: ''
+      },
+      links: {
+        github: '',
+        twitter:''
+      }
+    },
     ashi: {
       name: 'ashi',
       isKeynote: false,
@@ -99,7 +120,7 @@
       description: '06年之前是中國最大D＆D / TRPG資料站「最深的地下城」的站長，美漫漢化組創始人和網設計師，此後一直是JS Hacker和Web App開發者（開發+設計+產品）。先後在土豆網，豆瓣，Flipboard，引人注目的負責JS基礎工程和創新產品，最喜歡的產品有2D虛擬世界社區「阿爾法城」，全球最快的EOS區塊鏈瀏覽器eosx.io。一直努力推動JS技術和Web開發技術的演進，為此做過OzJS，DarkDOM / CardKit，WebCube，“現代Web開發咒語大全”等開源項目，目前在字節跳動負責Web Dev Engine方向，打造下一代框架和工具產品。',
       image: 'dexteryy.jpg',
       agenda: {
-        title: '',
+        title: '現代 Web 開發的現況與未來',
         levels: [],
         lang: 'CH',
         type: '',
@@ -345,6 +366,7 @@
 
 
   var workshopSpeakers = {
+
     Fred: {
       name: 'Fred',
       isKeynote: false,
@@ -472,6 +494,27 @@
   };
 
   var speakers = {
+       alex: {
+      name: 'Alexander Khovansky',
+      isKeynote: false,
+      company: '',
+      description: '',
+      image: 'alex.jpg',
+      agenda: {
+        title: 'Escaping the Web of Insecurities',
+        levels: [],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline_E: '',
+        outline: ''
+      },
+      links: {
+        github: '',
+        twitter:''
+      }
+    },
     Fred: {
       name: 'Fred',
       isKeynote: false,
@@ -484,7 +527,7 @@
         lang: 'CH',
         type: '',
         youtube: '',
-        slide: '',
+        slide: 'https://drive.google.com/open?id=0B3C-AM4bC8JFWk1MS253YUlPN3dENGdMNVpYTjZxN0lYeGdJ  ',
         outline_E: '',
         outline: '現在主流的軟體架構趨勢之下，Node.js 所扮演的角色為何？我們怎麼使用 Node.js 來實現新的架構？'
       },
@@ -811,7 +854,7 @@
       description: '06年之前是中國最大D＆D / TRPG資料站「最深的地下城」的站長，美漫漢化組創始人和網設計師，此後一直是JS Hacker和Web App開發者（開發+設計+產品）。先後在土豆網，豆瓣，Flipboard，引人注目的負責JS基礎工程和創新產品，最喜歡的產品有2D虛擬世界社區「阿爾法城」，全球最快的EOS區塊鏈瀏覽器eosx.io。一直努力推動JS技術和Web開發技術的演進，為此做過OzJS，DarkDOM / CardKit，WebCube，“現代Web開發咒語大全”等開源項目，目前在字節跳動負責Web Dev Engine方向，打造下一代框架和工具產品。',
       image: 'dexteryy.jpg',
       agenda: {
-        title: '',
+        title: '現代 Web 開發的現況與未來',
         levels: [],
         lang: 'CH',
         type: '',
@@ -904,7 +947,7 @@
         lang: 'CH',
         type: '',
         youtube: '',
-        slide: '',
+        slide: 'https://docs.google.com/presentation/d/1F0oXnFYOIzxJWGCQXzDOGqQQJ7ZflUqcNuItyR9ItfI/edit',
         outline_E: '',
         outline: 'AMP 是 Google 根據開放原始碼格式所設計的網頁開發框架，能夠加快網頁載入速度進而提升使用者體驗。本議程將簡單介紹 AMP 是什麼與其特色。'
       },
@@ -948,63 +991,64 @@
   };
 
   var agenda = {
-    
      '主年會': [
-     {time: '09:00 - 09:20', list: {
+      {time: '09:00 - 09:20', list: {
         all: {name: '報到', speaker: '',people:0},
       }},
       {time: '09:20 - 09:30', list: {
         all: {name: '開場', speaker: '',people:0},
       }},
       {time: '09:30 - 10:20', list: {
-        all: {name: 'TBD', speaker: '',people:0},
+        101: {name: 'Deep Learning in JS', speaker: 'ashi',people:1},
       }},
       {time: '10:20 - 10:30', list: {
         all: {name: '休息換場', speaker: '',people:0},
       }},
       {time: '10:30 - 11:10', list: {
-        101: {name: 'CSS-in-JS: The Good, the Bad, and the Ugly', speaker: 'Maya',people:1},
-        102: {name: 'Optimize Node.js Performance with fork(2) ', speaker: 'Tun',people:1},
+        101: {name: 'Embedding V8 in NativeScript', speaker: 'Vladimir',people:1},
+        102: {name: '現代', speaker: 'dexteryy',people:1},
       }},
       {time: '11:10 - 11:20', list: {
         all: {name: '休息換場', speaker: '',people:1},
       }},
       {time: '11:20 - 12:00', list: {
-        101: {name: '前端項目上 Web Worker 實踐', speaker: 'Johann',people:1},
-        102: {name: 'Re-Architecture Transaction Page and Sleep Well', speaker: 'Paipo',people:1},
+        101: {name: 'Escaping the Web of Insecurities', speaker: 'alex',people:1},
+        102: {name: '前端項目上 Web Worker 實踐', speaker: 'Johann',people:1},
       }},
       {time: '12:00 - 13:00', list: {
         all: {name: '午餐', speaker: '',people:1},
       }},
       {time: '13:00 - 13:40', list: {
-        101: {name: 'RxJS - Practice makes Perfect', speaker: 'Jan',people:1},
-        102: {name: 'Embedding V8 in NativeScript', speaker: 'Vladimir',people:1},
+        101: {name: 'End-to-end Type-Safe GraphQL Apps', speaker: 'Carlos',people:1},
+        102: {name: '如何共用元件 - 從開發LINE隨你填貼圖來談', speaker: 'Line',people:2},
       }},
       {time: '13:40 - 13:50', list: {
         all: {name: '休息換場', speaker: '',people:1},
       }},
       {time: '13:50 - 14:30', list: {
-        101: {name: '如何共用元件 - 從開發LINE隨你填貼圖來談', speaker: 'Line',people:2},
-        102: {name: 'Deep Learning in JS', speaker: 'ashi',people:1},
+        101: {name: 'Mind-Reading with Adaptive and Intelligent User Interfaces', speaker: 'David',people:1},
+        102: {name: 'Optimize Node.js Performance with fork(2) ', speaker: 'Tun',people:1},
       }},
       {time: '14:30 - 14:40', list: {
         all: {name: '休息換場', speaker: '',people:1},
       }},
       {time: '14:40 - 15:20', list: {
         101: {name: 'Modern Forms in React ', speaker: 'Erik',people:1},
-        102: {name: 'End-to-end Type-Safe GraphQL Apps', speaker: 'Carlos',people:1},
+        102: {name: 'YodaOS: Resolving IoT fragmentation by Node.js, NPM or Web?', speaker: 'Yorkie',people:1},      
       }},
       {time: '15:20 - 15:40', list: {
         all: {name: '下午場 & 交流時間', speaker: '',people:1},
       }},
       {time: '15:40 - 16:20', list: {
-        101: {name: 'Mind-Reading with Adaptive and Intelligent User Interfaces', speaker: 'David',people:1},
-        102: {name: 'YodaOS: Resolving IoT fragmentation by Node.js, NPM or Web?', speaker: 'Yorkie',people:1},      }},
+        101: {name: 'RxJS - Practice makes Perfect', speaker: 'Jan',people:1},
+        102: {name: 'Re-Architecture Transaction Page and Sleep Well', speaker: 'Paipo',people:1},
+      }},
       {time: '16:20 - 16:30', list: {
         all: {name: '休息換場', speaker: '',people:1},
       }},
       {time: '16:30 - 17:20', list: {
-        101: {name: 'Let’s go serverless', speaker: 'Chi',people:1},
+        101: {name: 'CSS-in-JS: The Good, the Bad, and the Ugly', speaker: 'Maya',people:1},
+        102: {name: 'Let’s go serverless', speaker: 'Chi',people:1},
       }},
       {time: '17:20 - 17:30', list: {
         all: {name: '散場，明年見！', speaker: '',people:1},
@@ -1098,7 +1142,7 @@
   };
 
   var rooms = {
-    'day1':[''],
+    'day1':['A'],
     'day2':['MSpace'],
   };
 
