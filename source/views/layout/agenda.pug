@@ -31,7 +31,7 @@ block content
                     .col-md-5.room-title
                       h2 A
                     .col-md-5.room-title
-                      h2 C
+                      h2 B
                   else 
                     .col-md-12
                       h3.title-date 9/28
@@ -57,7 +57,7 @@ block content
                         else
                           if Object.keys(agendaContents.list).length===2
                             .col-md-6
-                              span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
+                              span.room(data-room=(contentIndex==101?"A":"B") class='room-'+contentIndex)
                               if (content.speaker)
                                 - var info = speakers[content.speaker];
                                   h3 #{info.name}
@@ -83,6 +83,7 @@ block content
                                 h4
                           else
                             .col-md-12
+                              span.room(data-room="A" class='room-'+contentIndex)
                               if (content.speaker)
                                 - var info = speakers[content.speaker];
                                   h3 #{info.name}
