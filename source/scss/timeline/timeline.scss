@@ -98,6 +98,20 @@ body .jsdc-background {
       }
     }
   }
+  .note {
+    color: $jsdc2019-white;
+    border-radius: 5px;
+    background-color: #0099b4;
+    display: block;
+    padding: 12px;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .note-outer {
+    text-align: center;
+  }
   .room {
     display: none;
     min-width: 150px;
@@ -280,6 +294,10 @@ body .jsdc-background {
 }
 @media (max-width: 768px) {
   #agenda {
+    .note-outer {
+      padding-left: 0;
+      padding-right: 0;
+    }
     .date {
       padding: 0;
 
