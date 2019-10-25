@@ -8,8 +8,6 @@ block content
           i.fa.fa-arrow-up
       .container(style="padding-top:20px; background-color: #222")
         .row
-          .col-md-12.note-outer
-            a.note(href='https://hackmd.io/@JSDC-tw' target="_blank") 官方共筆：https://hackmd.io/@JSDC-tw
           .col-md-12.date
             - var day = 0;
             each rooms, index in agenda
@@ -26,6 +24,8 @@ block content
               .row.rooms(class=('day-'+day))
                 each roomContents, roomIndex in room
                   if (day == 1)
+                    .col-md-12.note-outer
+                      a.note(href='https://hackmd.io/@JSDC-tw/2019' target="_blank") 官方共筆：https://hackmd.io/@JSDC-tw/2019
                     .col-md-12
                       h3.title-date 10/26
                       h3.title-date JavaScript 穩定之後，然後呢？

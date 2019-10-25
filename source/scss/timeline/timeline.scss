@@ -107,10 +107,13 @@ body .jsdc-background {
     margin: 20px 0;
     font-weight: 500;
     font-size: 16px;
+    width:80%;
   }
 
   .note-outer {
+    display: flex;
     text-align: center;
+    justify-content:center;
   }
   .room {
     display: none;
@@ -295,8 +298,11 @@ body .jsdc-background {
 @media (max-width: 768px) {
   #agenda {
     .note-outer {
-      padding-left: 0;
-      padding-right: 0;
+      // padding-left: 0;
+      // padding-right: 0;
+    }
+    .note{
+      width:100%;
     }
     .date {
       padding: 0;
