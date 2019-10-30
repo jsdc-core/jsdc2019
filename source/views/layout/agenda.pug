@@ -68,6 +68,8 @@ block content
                                       span.label.event-lang #{languages[info.agenda.lang]}
                                     if (info.agenda.slide)
                                       a.label.label-info(target="_blank" href=info.agenda.slide) Slide
+                                    if (info.agenda.slidetwo)
+                                      a.label.label-info(target="_blank" href=info.agenda.slidetwo) Slide
                                     if (info.agenda.youtube)
                                       a.label.label-danger(target="_blank" href=info.agenda.youtube) Youtube
                                     each value in info.agenda.levels
