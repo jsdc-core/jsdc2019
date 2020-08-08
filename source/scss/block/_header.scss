@@ -83,10 +83,24 @@
         }
         .sub-title {
           color: #ffc825;
+        }
+        .next-year-link {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
 
+          a {
+            font-size: 20px;
+            border-radius: 12px;
+            border: 1px solid #ffc825;
+            cursor: pointer;
+            padding: 12px 40px;
+            text-decoration: none;
+            color: #ffc825;
+          }
         }
         .division {
-        
+
           span{
             height: 1px;
             margin:15px;
